@@ -173,6 +173,13 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+<<<<<<< HEAD
+=======
+  - /_pages/blog.md
+  - /_pages/teaching.md
+  - /_pages/news.md
+  - /_pages/profiles.md
+>>>>>>> parent of 29ab7d5 (Updated.)
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
