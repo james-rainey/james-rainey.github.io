@@ -2,7 +2,7 @@
 layout: page
 title: INFORM
 description: INtelligent FOod Recognition and Monitoring
-img: assets/img/INFORM_system.png
+img: assets/img/1.jpg
 importance: 1
 category: work
 related_publications: true
@@ -14,7 +14,7 @@ As well as recognising the food items, INFORM can also determine the temperature
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORMsystem.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="INFORM System" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -23,10 +23,10 @@ The INFORM system prototype.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/maskVisBefore.png" title="Mask Visualisation Before Eating" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2.jpg" title="Mask Visualisation Before Eating" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/maskVisAfter.png" title="Mask Visualisation After Eating" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="Mask Visualisation After Eating" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
