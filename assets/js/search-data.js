@@ -426,9 +426,9 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-3d-printing",
+          title: '3D Printing',
+          description: "My 3d printing projects.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3D_printing/";
             },},{id: "projects-project-3-with-very-long-name",
@@ -471,9 +471,9 @@ ninja.data = [{
           description: "INtelligent FOod Recognition and Monitoring",
           section: "Projects",handler: () => {
               window.location.href = "/projects/INFORM/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-nevis",
+          title: 'NEVIS',
+          description: "NEuromorphic VIsion System (NEVIS)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/NEVIS/";
             },},{id: "projects-project-2",
@@ -486,35 +486,28 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6A%61%6D%65%73.%72%61%69%6E%65%79@%6E%65%77%63%61%73%74%6C%65.%61%63.%75%6B", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/jrainey12", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/james-rainey-b928b1a8", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
+        id: 'social-orcid',
+        title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://orcid.org/0000-0002-8894-8327", "_blank");
         },
       },{
       id: 'light-theme',
