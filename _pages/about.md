@@ -26,10 +26,10 @@ latest_posts:
 ---
 
 
-KTP Associate at Falcon Foodservice Equipment and Newcastle University.
-An innovative, passionate and highly motivated Computer Vision Researcher with experience developing advancedcomputer vision solutions.
-Proficient in Python programming, successfully developed AI-based computer vision applications for research and commercial production.
-Demonstrated strong problem solving skills through the development of software and hardware systems, from theoretical concepts through to a
-fully functional product. A capable researcher with a growing publication record in the field of computer vision.
+I’m a passionate and driven Computer Vision Researcher with a strong background in developing advanced AI-powered vision solutions. Skilled in Python and experienced in building applications that move seamlessly from research to real-world deployment, I enjoy tackling complex challenges and turning theoretical concepts into practical, impactful systems.
 
-Currently working on an INtelligent FOod Recognition and Montitoring system ([INFORM](https://jrainey12.github.io/projects/INFORM/).
+Along the way, I’ve contributed to both research and commercial projects, combining creativity with technical expertise to deliver results. My work has led to a growing publication record in computer vision, and I’m always eager to collaborate on innovative ideas that push the field forward.
+
+Currently working on an INtelligent FOod Recognition and Montitoring system ([INFORM](https://jrainey12.github.io/projects/INFORM/)).
+
+Also working on [3D Printing](https://jrainey12.github.io/projects/3D_printing) and Raspberry Pi based [projects](https://jrainey12.github.io/projects/) in my spare time.

@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 INtelligent FOod Recognition and Monitoring (INFORM) is an advanced, edge AI system for the recognition of food.
-
+{% cite rainey2024food %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

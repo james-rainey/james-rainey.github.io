@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: 3D Printing
+description: My 3d printing projects.
 img: assets/img/3.jpg
 importance: 3
 category: fun
-giscus_comments: true
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.
