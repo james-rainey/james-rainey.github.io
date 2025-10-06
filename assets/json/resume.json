@@ -22,7 +22,7 @@
       }
     ]
   },
-  "Post Doctoral Research": [
+  "work": [
     {
       "name": "Falcon Foodservice Equipment/Newcastle University",
       "position": "KTP Research Associate",
@@ -30,9 +30,7 @@
       "endDate": "present",
       "summary": "Developing INtelligent FOod Recognition and Monitoring system (INFORM).",
       "highlights": ["Advanced from early concept to functioning product.","Acquired Patent for INFORM.","Disseminated research via publications."]
-    }
-  ],
-  "Post Doctoral Research": [
+    },
     {
       "name": "Newcastle University",
       "position": "Research Associate",
@@ -41,9 +39,7 @@
       "summary": "Worked on various research projects.",
       "highlights": ["Early development on INtelligent FOod Recognition and Monitoring system (INFORM).",
       "Created a blockchain-based framework for media authentication", "Developed a Neuromorphic Vision System using spiking neural networks"]
-    }
-  ],
-  "Post Doctoral Research": [
+    },
     {
       "name": "Stirling University",
       "position": "Postdoc Research Fellow",

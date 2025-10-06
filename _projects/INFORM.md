@@ -2,7 +2,7 @@
 layout: page
 title: INFORM
 description: INtelligent FOod Recognition and Monitoring
-img: assets/img/1.jpg
+img: assets/img/falconLogo.jpg
 importance: 1
 category: work
 related_publications: true
@@ -17,13 +17,9 @@ The system was created through a close collaboration between Falcon Foodservice 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="INFORM System" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FalconLogo.png" title="Falcon Logo" class="img-fluid rounded z-depth-1" %}
-    </div>
-
 </div>
 <div class="caption">
-The INFORM system (left). Falcon Foodservice Equipment(right).
+The INFORM system.
 </div>
 
 ## Use Cases
@@ -77,6 +73,7 @@ Through this closed-loop feedback system, INFORM not only provides real-time vis
     Visualisations of the food detection, before (left) and after (right) part of the food has been eaten.
 </div>
 
+## Evaluation
 
 A comprehensive series of tests has been carried out to evaluate the INFORM system’s performance, both in controlled settings and real-world environments. Initial testing took place in-house at Falcon, where engineers assessed the system’s technical capabilities, accuracy, and reliability under laboratory conditions. These trials allowed the team to fine-tune the AI algorithms and optimize hardware integration for consistent results.
 
