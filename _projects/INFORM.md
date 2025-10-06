@@ -81,7 +81,7 @@ Further evaluations were then conducted in a live kitchen environment at Newcast
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/NewcastleTestingSetup" title="INFORM System" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/NewcastleTestingSetup.jpg" title="INFORM System" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
