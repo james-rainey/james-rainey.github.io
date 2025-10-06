@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jrainey12
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - jrainey12/gait-transformer
+  - jrainey12/view_angle_classifier_v2
+  - jrainey12/darts_cv
