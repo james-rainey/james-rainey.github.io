@@ -8,20 +8,26 @@ category: work
 related_publications: true
 ---
 
-INtelligent FOod Recognition and Monitoring (INFORM) is an advanced edge AI system designed to accurately identify, analyze, and monitor food in real time. Leveraging cutting-edge artificial intelligence and computer vision technologies, INFORM enables automated food recognition, supporting smarter decisions in nutrition tracking, waste reduction, and quality control.
-
-The system was created through a close collaboration between Falcon Foodservice Equipment and Newcastle University, bringing together the expertise of leading engineers and academic researchers. This partnership combines real-world foodservice industry insight with state-of-the-art AI innovation, resulting in a practical, scalable solution that enhances efficiency and sustainability in food management.
-
-Read about the upcoming INFORM Workshop [here](https://jrainey12.github.io/INFORM_Workshop)!
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+<p>
+INtelligent FOod Recognition and Monitoring (INFORM) is an advanced edge AI system designed to accurately identify, analyze, and monitor food in real time. Leveraging cutting-edge artificial intelligence and computer vision technologies, INFORM enables automated food recognition, supporting smarter decisions in nutrition tracking, waste reduction, and quality control.
+</p>
+<p>
+The system was created through a close collaboration between Falcon Foodservice Equipment and Newcastle University, bringing together the expertise of leading engineers and academic researchers. This partnership combines real-world foodservice industry insight with state-of-the-art AI innovation, resulting in a practical, scalable solution that enhances efficiency and sustainability in food management.
+</p>        
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="INFORM System" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+        The INFORM system prototypes: v1, v2 and v3.
+        </div>
     </div>
 </div>
-<div class="caption">
-The INFORM system.
-</div>
+
+
+Read about the upcoming INFORM Workshop <a href='https://jrainey12.github.io/INFORM_Workshop'>here</a>
 
 ## Use Cases
 
