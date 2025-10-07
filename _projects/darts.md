@@ -4,8 +4,8 @@ title: Darts
 description: a project with a background image and giscus comments
 img: assets/img/5.jpg
 importance: 3
-category: fun
-giscus_comments: true
+category: other
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

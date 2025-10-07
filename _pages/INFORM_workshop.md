@@ -1,14 +1,20 @@
 ---
 layout: page
 title: INFORM Workshop
+main_title: INFORM Workshop
 permalink: /INFORM_Workshop/
 related_publications: true
 ---
 
-Click [here](https://jrainey12.github.io/projects/INFORM/) for an overview of the INFORM Project.
+Click [here](../projects/INFORM/) for an overview of the INFORM Project.
 
 
 ## Information
+
+Join the INFORM Workshop
+Discover how technology can help reshape the future of food in healthcare. At this interactive session, you’ll see the INFORM system in action—tracking plate waste, improving nutrition, and supporting sustainability in hospitals and care settings. Connect with healthcare professionals, researchers, and innovators who are driving real change in patient care.
+
+Don’t miss this opportunity to be part of the movement toward smarter, more sustainable food in healthcare. Register now to secure your place!
 
 **Date:** 6th November 2025  
 **Time:** 11am to 4pm  
@@ -75,10 +81,10 @@ Arrival from 11 am.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="INFORM System" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/INFORMPrototypes.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-The INFORM system.
+The INFORM system prototypes.
 </div>
 

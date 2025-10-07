@@ -4,7 +4,7 @@ title: NEVIS
 description: NEuromorphic VIsion System (NEVIS)
 img: assets/img/4.jpg
 importance: 3
-category: work
+category: other
 ---
 
 
