@@ -2,8 +2,8 @@
 layout: page
 title: INFORM
 description: INtelligent FOod Recognition and Monitoring
-main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2>
-main_description: <hr><h2 align=center>Empowering data-driven decisions in Foodservice</h2>
+main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2><hr>
+main_description: <h2 align=center>Empowering Data-driven Decisions in Foodservice</h2>
 img: assets/img/falconLogo.jpg
 importance: 1
 category: work
@@ -29,7 +29,6 @@ p    {
 </style>
 
 <br>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
 <p>
@@ -55,6 +54,7 @@ The system was created through a close collaboration between Falcon Foodservice 
     </div>
 
 <div class="col-sm mt-3 mt-md-0">
+<br>
 <p>This partnership combines real-world foodservice industry insight with state-of-the-art AI innovation, resulting in a practical, scalable solution that enhances efficiency and sustainability in food management.
 </p>
 <p>
@@ -65,6 +65,7 @@ Read more about the upcoming INFORM Workshop <a href='../../INFORM_Workshop'>her
 
 
 <h2>Who Benefits from INFORM?</h2>
+<hr>
 <p>
 The INFORM system is initially designed for implementation within hospital environments, where precise monitoring of food waste and nutritional intake can play a crucial role in improving patient health outcomes. By tracking what patients consume and identifying patterns in food preferences or waste, the system supports healthcare providers in tailoring meals to individual dietary needs, enhancing patient satisfaction, and reducing unnecessary food production. In the long term, INFORM contributes to maintaining high standards of food quality and delivery efficiency, fostering a more sustainable and cost-effective food management process across the healthcare setting.
 </p>
@@ -73,10 +74,10 @@ The INFORM system is initially designed for implementation within hospital envir
         {% include figure.liquid loading="eager" path="assets/img/benefits.png" title="INFORM System benefits" class="img-fluid" %}
     </div>
 </div>
-<div class="caption">
+<!---<div class="caption">
 <p>The benefits of the information provided by INFORM. </p>
 </div>
-
+-->
 <p>
 While INFORM is initially designed for hospital settings, its potential applications extend far beyond healthcare. The system can be seamlessly adapted to any environment where food is prepared and served, offering valuable insights and benefits across a range of industries.
 </p>
@@ -93,6 +94,7 @@ By bridging the gap between technology, nutrition, and sustainability, INFORM ha
 
 
 <h2>How does it work?</h2>
+<hr>
 <p>
 The INFORM system is built around a sophisticated array of integrated sensors that work together to identify food items, measure their temperature, and determine the precise weight of each component on a plate. This multi-sensor approach enables the system to capture comprehensive data about every meal with remarkable speed and accuracy.
 </p>
@@ -116,6 +118,7 @@ This seamless automation not only ensures reliable data collection but also mini
 
 
 <h2>Actionable Results</h2>
+<hr>
 <p>
 When a plate is returned after a meal, the same intelligent scanning process is performed again. By comparing the data captured before and after eating, the INFORM system can automatically determine how much food has been consumed and how much has been wasted. From these comparisons, detailed insights are generated, including precise measurements of food waste, nutritional intake, and the associated cost of the uneaten food.
 </p>
@@ -138,6 +141,7 @@ Through this closed-loop feedback system, INFORM not only provides real-time vis
 </div>
 
 <h2>Evaluation</h2>
+<hr>
 <p>
 A comprehensive series of tests has been carried out to evaluate the INFORM system’s performance, both in controlled settings and real-world environments.
 Initial testing took place in-house at Falcon, where engineers assessed the system’s technical capabilities, accuracy, and reliability under laboratory conditions. These trials allowed the team to fine-tune the AI algorithms and optimize hardware integration for consistent results.
@@ -156,4 +160,12 @@ Further evaluations were then conducted in a live kitchen environment at Newcast
 
 <p>
 Further information on the INFORM system performance can be found in the conference publication{% cite rainey2024food %}.
+</p>
+
+<h2>What's Next?</h2>
+<hr>
+<p>
+The next stage for INFORM is all about putting the system into the hands of real users and demonstrating its value in everyday settings. By moving beyond the lab and into real-world environments, INFORM can showcase how it streamlines operations, reduces waste, and delivers meaningful insights that drive better decisions. Gathering feedback from users will also play a key role in refining and enhancing the system to ensure it meets the practical needs of healthcare professionals and organizations.
+
+Looking ahead, the potential for INFORM extends far beyond its current applications. The system could be adapted for use across a wide range of industries where food monitoring, waste reduction, and nutrition tracking are critical. Future developments may include integration with smart kitchen equipment such as connected ovens, advanced analytics that evolve through continuous data collection, and the creation of a mobile app for real-time access and convenience. With these innovations, INFORM aims to become a leading solution in data-driven food management and sustainability.
 </p>

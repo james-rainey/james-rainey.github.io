@@ -54,11 +54,21 @@
       "institution": "Queen's University Belfast",
       "location": "Belfast, Northern Ireland",
       "url": "https://www.qub.ac.uk",
-      "area": "Gait Recognition",
+      "area": "Gait Recognition - Developed a method for gait recognition using 3D Markerless Motion Capture.",
       "studyType": "PhD",
       "startDate": "2016-10-01",
       "endDate": "2020-12-01"
+    },
+    {
+      "institution": "Queen's University Belfast",
+      "location": "Belfast, Northern Ireland",
+      "url": "https://www.qub.ac.uk",
+      "area": "Computer Science",
+      "studyType": "Undergraduate",
+      "startDate": "2013-09-01",
+      "endDate": "2016-06-01"
     }
+
   ],
   "skills": [
     {
@@ -76,17 +86,28 @@
       "keywords": [
         "Pytorch",
         "Tensorflow",
-        "OpenCV"
+        "OpenCV",
+        "PIL"
       ]
     },
     {
-      "name": "Tools",
+      "name": "Software Tools",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Git",
         "Vim",
         "AWS",
         "Latex"
+      ]
+    },
+    {
+      "name": "Hardware Tools",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Raspberry Pi",
+        "NVidia Jetson",
+        "Various Cameras and Sensors",
+        "3D Printers"
       ]
     }
   ]
