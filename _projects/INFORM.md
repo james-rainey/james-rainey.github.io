@@ -12,7 +12,7 @@ INtelligent FOod Recognition and Monitoring (INFORM) is an advanced edge AI syst
 
 The system was created through a close collaboration between Falcon Foodservice Equipment and Newcastle University, bringing together the expertise of leading engineers and academic researchers. This partnership combines real-world foodservice industry insight with state-of-the-art AI innovation, resulting in a practical, scalable solution that enhances efficiency and sustainability in food management.
 
-Read about the upcoming INFORM Workshop [here](jrainey12.github.io/INFORM_workshop)!
+Read about the upcoming INFORM Workshop [here](https://jrainey12.github.io/INFORM_Workshop)!
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

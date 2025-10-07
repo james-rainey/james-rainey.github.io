@@ -5,14 +5,14 @@ permalink: /INFORM_Workshop/
 related_publications: true
 ---
 
-Click [here](jrainey12.github.io/projects/INFORM/) for an overview of the INFORM Project.
+Click [here](https://jrainey12.github.io/projects/INFORM/) for an overview of the INFORM Project.
 
 
 ## Information
 
-**Date:** 6th November 2025
-**Time:** 11am to 4pm
-**Location:** Newcastle University/Online (Hybrid)
+**Date:** 6th November 2025  
+**Time:** 11am to 4pm  
+**Location:** Newcastle University/Online (Hybrid)  
 
 ## Background
 
@@ -30,8 +30,8 @@ The INFORM workshop is designed to give participants an up-close look at the INF
 
 ## Hosts
 
-**Dr James Rainey** Research Associate, Newcastle University/Falcon Foodservice Equipment
-**Dr Deepayan Bhowmik** Senior Lecturer(Associate Professor) in Data Science, Director of Research, School of Computing, Newcastle University
+**Dr James Rainey** Research Associate, Newcastle University/Falcon Foodservice Equipment  
+**Dr Deepayan Bhowmik** Senior Lecturer(Associate Professor) in Data Science, Director of Research, School of Computing, Newcastle University  
 
 
 ## Agenda
@@ -45,22 +45,32 @@ Arrival from 11 am.
   </tr>
   <tr>
     <td>11:00</td>
-    <td>11:15</td>
-    <td>12:00</td>
-    <td>12:45</td>
-    <td>13:30</td>
-    <td>14:30</td>
-    <td>15:30</td>
-  </tr>
-  <tr>
     <td>Introductions and Welcome</td>
+   </tr>
+   <tr>
+    <td>11:15</td>
     <td>Speaker 1</td>
+    </tr>
+    <tr>
+    <td>12:00</td>
     <td>Speaker 2</td>
+    </tr>
+    <tr>
+    <td>12:45</td>
     <td>tea/lunch break</td>
+    </tr>
+    <tr>
+    <td>13:30</td>
     <td>INFORM Demonstration</td>
+    </tr>
+    <tr>
+    <td>14:30</td>
     <td>Discussion and Questions</td>
+    </tr>
+    <tr>
+    <td>15:30</td>
     <td>Wrap up and Finish</td>
-  </tr>
+    </tr>
 </table> 
 
 <div class="row">
