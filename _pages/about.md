@@ -30,6 +30,8 @@ I’m a passionate and driven Computer Vision Researcher with a strong backgroun
 
 Along the way, I’ve contributed to both research and commercial projects, combining creativity with technical expertise to deliver results. My work has led to a growing publication record in computer vision, and I’m always eager to collaborate on innovative ideas that push the field forward.
 
-Currently working on an INtelligent FOod Recognition and Montitoring system ([INFORM](projects/INFORM/)) and preparing upcoming [INFORM Workshop](INFORM_Workshop/).
+<!---Currently working on an INtelligent FOod Recognition and Montitoring system ([INFORM](projects/INFORM/)) and preparing upcoming [INFORM Workshop](INFORM_Workshop/).-->
+I have worked on projects in food recognition, [Neuromorphic Vision](projects/NEVIS), Media Authenticity and Gait Recognition.
 
-Also working on [3D Printing](projects/3D_printing) and Raspberry Pi based [projects](projects/) in my spare time.
+
+I also enjoy working on [3D Printing](projects/3D_printing) and Raspberry Pi based [projects](projects/) in my spare time.

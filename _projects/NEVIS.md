@@ -6,7 +6,7 @@ main_title: <h1 align=center><b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem (<b
 main_description: <h2 align=center>Building Brain-Inspired Vision Systems That See, and Think, Like We Do</h2>
 img: assets/img/NEVIS/kria_crop.png
 importance: 3
-category: work
+category: other
 related_publications: true
 ---
 <style>

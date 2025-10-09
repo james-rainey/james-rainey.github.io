@@ -6,7 +6,7 @@ main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>tellig
 main_description: <h2 align=center>Workshop</h2>
 
 permalink: /INFORM_Workshop/
-related_publications: true
+related_publications: false
 ---
 
 <style>
@@ -25,10 +25,20 @@ h2   {
 p    {
      color: black;
      }
+.tabDiv { 
+     color: black;
+     align: center;
+     }
+td   {
+     color:black;
+     }
+th   {
+     color: black;
+     }
 </style>
 
 <p>
-Join the INFORM Workshop: Discover how technology can help reshape the future of food in healthcare. At this interactive session, you’ll see the INFORM system in action—tracking plate waste, improving nutrition, and supporting sustainability in hospitals and care settings. Connect with healthcare professionals, researchers, and innovators who are driving real change in patient care.
+Join the INFORM Workshop: Discover how technology can help reshape the future of food in healthcare. At this interactive session, you’ll see the INFORM system in action, tracking plate waste, improving nutrition, and supporting sustainability in hospitals and care settings. Connect with healthcare professionals, researchers, and innovators who are driving real change in patient care.
 </p>
 
 <p>
@@ -41,10 +51,11 @@ Join the INFORM Workshop: Discover how technology can help reshape the future of
 
 <p>
 Don’t miss this opportunity to be part of the movement toward smarter, more sustainable food in healthcare.
+</p>
+<p align=center>
+<a href="mailto:james.rainey@newcastle.ac.uk" title="email">Email Now to secure your Place <i class="fa-solid fa-envelope"></i></a>
 <br>
-Email now to secure your place: <a href="mailto:james.rainey@newcastle.ac.uk" title="email"><i class="fa-solid fa-envelope"></i></a>
-<br>
-Click <a href="../projects/INFORM/">here</a> for an overview of the INFORM Project.
+<!--Click <a href="../projects/INFORM/">here</a> for an overview of the INFORM Project.-->
 </p>
 
 <h2>Background</h2>
@@ -78,18 +89,7 @@ The INFORM workshop is designed to give participants an up-close look at the INF
 <hr>
 
 
-|Time|Activity|
-|---|---|
-|11:00|Introductions and Welcome|
-|11:15|Speaker 1|
-|12:00|Speaker 2|
-|12:45|tea/lunch break|
-|13:30|INFORM Demonstration|
-|14:30|Discussion and Questions|
-|15:30|Wrap up and Finish|
-
-<!---
-<div align=center>
+<div align="center">
  <table>
   <tr>
     <th>Time</th>
@@ -125,9 +125,8 @@ The INFORM workshop is designed to give participants an up-close look at the INF
     </tr>
 </table> 
 </div>
---->
 <p>
-<div class="row">
+<div class="row" style="padding-left:20%; padding-right:20%;">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/INFORMPrototypes.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
     </div>
