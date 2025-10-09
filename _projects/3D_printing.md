@@ -4,7 +4,7 @@ title: 3D Printing
 description: My 3d printing projects.
 img: assets/img/5.jpg
 importance: 3
-category: fun
+category: other
 giscus_comments: false
 ---
 
