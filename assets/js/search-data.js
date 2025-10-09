@@ -421,21 +421,11 @@ ninja.data = [{
           description: "My 3d printing projects.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3D_printing/";
-            },},{id: "projects-algae-watch",
-          title: 'ALGAE-watch',
-          description: "Blue Algae Surveillance-A remote sensing-based digital twin framework",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/ALGAE_watch/";
             },},{id: "projects-gait-recognition",
           title: 'Gait Recognition',
           description: "Using 3D Markerless Motion Capture",
           section: "Projects",handler: () => {
               window.location.href = "/projects/GaitRecognition/";
-            },},{id: "projects-inform",
-          title: 'INFORM',
-          description: "INtelligent FOod Recognition and Monitoring",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/INFORM/";
             },},{id: "projects-markerless-motion-capture",
           title: 'Markerless Motion Capture',
           description: "Low-cost system for full body 3D Markerless Motion Capture",
