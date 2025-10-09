@@ -426,11 +426,6 @@ ninja.data = [{
           description: "Using 3D Markerless Motion Capture",
           section: "Projects",handler: () => {
               window.location.href = "/projects/GaitRecognition/";
-            },},{id: "projects-markerless-motion-capture",
-          title: 'Markerless Motion Capture',
-          description: "Low-cost system for full body 3D Markerless Motion Capture",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/MarkerlessMocap/";
             },},{id: "projects-nevis",
           title: 'NEVIS',
           description: "NEuromorphic VIsion System (NEVIS)",
