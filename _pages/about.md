@@ -19,10 +19,6 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 I’m a **Computer Vision Researcher** passionate about building intelligent systems that enable machines to see, understand, and interact with the world. My work focuses on developing AI-powered vision solutions that seamlessly bridge the gap between **cutting-edge research** and **real-world applications**, turning complex ideas into practical, high-impact systems.
