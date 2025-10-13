@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "",
@@ -416,16 +409,21 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-3d-printing",
-          title: '3D Printing',
-          description: "My 3d printing projects.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3D_printing/";
-            },},{id: "projects-gait-recognition",
+          section: "News",},{id: "projects-gait-recognition",
           title: 'Gait Recognition',
           description: "Using 3D Markerless Motion Capture",
           section: "Projects",handler: () => {
               window.location.href = "/projects/GaitRecognition/";
+            },},{id: "projects-game-mini-figures",
+          title: 'Game Mini Figures',
+          description: "3D printed mini figures from video games.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/GameFigures/";
+            },},{id: "projects-inform",
+          title: 'INFORM',
+          description: "INtelligent FOod Recognition and Monitoring",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/INFORM/";
             },},{id: "projects-nevis",
           title: 'NEVIS',
           description: "NEuromorphic VIsion System (NEVIS)",
