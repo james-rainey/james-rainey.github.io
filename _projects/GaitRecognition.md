@@ -20,7 +20,6 @@ h2   {
 
 ---
 
-<!---**Can we recognize people by how they walk, not how they look?**-->
 
 Most biometric systems rely on faces, fingerprints, or iris scans. Even existing gait recognition techniques depend on body shape or silhouette-based features, which can easily be thrown off by clothing, lighting, or camera angle.
 
@@ -105,10 +104,10 @@ A number of challenges were faced throughout the project, but nothing proved uns
 
 |Challenge | My Approach |
 |----------|--------------|
-| **Slow fitting with SMPLify** | Optimized frame sampling and processed only gait cycles, not every frame. |
+| **Slow fitting with SMPLify** | Optimised frame sampling and processed only gait cycles, not every frame. |
 | **Cycle detection** | Used stride length and silhouette changes to detect full gait loops automatically. |
-| **Algorithm selection** | Let Auto-sklearn handle model and hyperparameter search with Bayesian optimization. |
-| **Explaining the final results** | Compared against methods using Kinect and marker-based skeleton data to contextualize performance. |
+| **Algorithm selection** | Let Auto-sklearn handle model and hyperparameter search with Bayesian optimisation. |
+| **Explaining the final results** | Compared against methods using Kinect and marker-based skeleton data to contextualise performance. |
 
 <br>
 
@@ -134,7 +133,7 @@ Even though the model only used 2D video, it performed on par with systems using
 ## 🔍 Why This Matters
 ---
 - **Non-intrusive:** Works without the subject’s cooperation.  
-- **Hardware-free:** Uses standard cameras — no special equipment.  
+- **Hardware-free:** Uses standard cameras, no special equipment.  
 - **Clothing-robust:** Motion isn’t affected by what the person wears.  
 - **Scalable:** Could be applied to surveillance, healthcare, sports, and animation.  
 

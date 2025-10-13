@@ -2,8 +2,8 @@
 layout: page
 title: INFORM Workshop
 description: INtelligent FOod Recognition and Monitoring Workshop
-main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2><hr>
-main_description: <h2 align=center>Workshop</h2>
+main_title: <h1 align=center><b>INFORM Workshop</b> #:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2><hr>
+main_description: <h2 align=center>Tackling Food Waste and Malnutrition in Healthcare</h2>
 
 permalink: /INFORM_Workshop/
 related_publications: false
@@ -20,7 +20,7 @@ h1   {
      }
 h2   {
      color: #57859a;
-     font-size:250%;
+     font-size:225%;
      }
 p    {
      color: black;
@@ -37,11 +37,37 @@ th   {
      }
 </style>
 
+<hr>
+
 <p>
-Join the INFORM Workshop: Discover how technology can help reshape the future of food in healthcare. At this interactive session, you’ll see the INFORM system in action, tracking plate waste, improving nutrition, and supporting sustainability in hospitals and care settings. Connect with healthcare professionals, researchers, and innovators who are driving real change in patient care.
+Every year, hospitals and healthcare facilities across the UK serve around <b>141 million meals</b>, but shockingly, up to <b>30 million</b> of these go uneaten. In NHS hospitals alone, as much as <b>18% of food</b> may end up wasted, which means roughly one in every six meals never reaches the people who need it.
+</p>
+
+<div class='row'>
+<div class="col-sm mt-3 mt-md-0">
+<p>
+This isn’t just an issue of waste, it’s about <b>people</b>. When nutritious food goes uneaten, patients miss out on vital nutrients that support their recovery, strength, and overall wellbeing. At the same time, throwing away uneaten meals has a serious environmental cost, contributing to carbon emissions and wasted resources.
+</p>
+<p>
+Meanwhile, <b>malnutrition</b> remains a growing concern, especially among older adults. Over <b>160,000 people</b> aged 75 and over living in UK care homes are estimated to be malnourished or at risk of malnutrition. The impact is far-reaching, malnutrition is already linked to around <b>15% of total health and social care spending</b>, as it leads to longer hospital stays, slower recovery, and greater pressure on services.
+</p>
+</div>
+<div class="col-sm mt-3 mt-md-0">
+{% include figure.liquid loading="eager" path="assets/img/INFORM/INFORMPrototypes.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
+</div>
+
+</div>
+
+<p>
+Our workshop brings together healthcare professionals, caterers, policymakers, and sustainability experts to explore how we can reduce food waste and improve nutrition across the care system. <b>Together</b>, we can create healthier, more <b>sustainable</b> healthcare environments, where every meal served truly <b>makes a difference</b>.
 </p>
 
 <p>
+👉 Join us for the <b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring(<b>INFORM</b>) Workshop, a hands-on event designed to give participants a comprehensive understanding of the INFORM system, an innovative platform developed to address challenges like food waste, nutrition management, and operational efficiency in healthcare settings. Through interactive demonstrations and live case studies, the workshop will showcase INFORM’s key features, practical applications, and the measurable benefits it can bring to hospitals, care homes, and other healthcare facilities.
+Click <a href="../projects/INFORM/">here</a> for an overview of the INFORM Project.
+</p>
+
+<p align=center>
 <b>Date:</b> 6th November 2025
 <br>
 <b>Time:</b> 11am to 4pm  
@@ -49,46 +75,30 @@ Join the INFORM Workshop: Discover how technology can help reshape the future of
 <b>Location:</b> Newcastle University/Online (Hybrid)  
 </p>
 
-<p>
-Don’t miss this opportunity to be part of the movement toward smarter, more sustainable food in healthcare.
-</p>
 <p align=center>
-<a href="mailto:james.rainey@newcastle.ac.uk" title="email">Email Now to secure your Place <i class="fa-solid fa-envelope"></i></a>
+<a href="mailto:james.rainey@newcastle.ac.uk" title="email" style="font-size: 150%;">Email Now <i class="fa-solid fa-envelope"></i> to secure your Place </a>
 <br>
-<!--Click <a href="../projects/INFORM/">here</a> for an overview of the INFORM Project.-->
-</p>
-
-<h2>Background</h2>
-<hr>
-<p>
-Every year, hospitals and healthcare facilities across the UK serve around 141 million meals, but as many as 30 million of these go uneaten. In NHS hospitals alone, up to 18% of food may be wasted, roughly one in every six meals. This not only affects environmental sustainability but also impacts patient care, as nutritious meals play a vital role in recovery and wellbeing.
 </p>
 <p>
-At the same time, malnutrition remains a growing concern, particularly among older adults. More than 160,000 people over 75 in UK care homes are estimated to be malnourished, a challenge that already accounts for around 15% of total health and social care spending.
+This session is ideal for professionals, stakeholders, and decision-makers who want to explore how digital tools like INFORM can streamline processes, enhance data-driven decision-making, and support organisational sustainability goals. Attendees will have the opportunity to engage in open discussions, share experiences, and discover new ways to integrate technology into everyday practice, ultimately improving patient <b>outcomes</b> and the <b>efficiency</b> of healthcare operations.
 </p>
-
-<h2>Purpose</h2>
-<hr>
-<p>
-The purpose of the INFORM workshop is to provide participants with a comprehensive understanding of the INFORM system by showcasing its features, demonstrating its practical applications, and discussing its potential uses and advantages. The workshop aims to engage an audience of professionals, stakeholders, and decision-makers who can directly benefit from adopting or integrating this technology into their work. Through interactive demonstrations and open discussions, attendees will gain insights into how INFORM can improve efficiency, enhance decision-making, and support their organizational goals.
-</p>
-<!---
-The INFORM workshop is designed to give participants an up-close look at the INFORM system—how it works, what it can do, and the real-world benefits it offers. During the session, attendees will see live demonstrations, explore practical examples, and join in conversations about how this technology can make their work easier and more effective. Whether you’re curious about innovative tools or looking for ways to enhance your organization’s performance, this workshop will show how INFORM can make a meaningful difference.
--->
 
 <h2>Hosts</h2>
 <hr>
 <p>
-<b><a href="">Dr Deepayan Bhowmik</a></b> Senior Lecturer (Associate Professor) in Data Science, Director of Research, School of Computing, Newcastle University  
-<br>
-<b><a href="../">Dr James Rainey</a></b> Research Associate, Newcastle University/Falcon Foodservice Equipment  
-
+Hosted In-person at Newcastle Universty's Urban Sciences Building and available to access online on microsoft teams, for those that can't make it in person.
 </p>
-
+<p>
+<b><a href="https://www.ncl.ac.uk/computing/staff/profile/deepayanbhowmik.html">Dr Deepayan Bhowmik</a></b> is a Senior Lecturer (Associate Professor) in Data Science and the Director of Research of the School of Computing at Newcastle University.
+<br>
+<b><a href="../">Dr James Rainey</a></b> is a KTP Research Associate for Newcastle University based at Falcon Foodservice Equipment in Stirling. 
+</p>
+<br>
 <h2>Agenda</h2>
 <hr>
-
-
+<p>
+Below is a preliminary agenda for the day:
+</p>
 <div align="center">
  <table>
   <tr>
@@ -101,15 +111,15 @@ The INFORM workshop is designed to give participants an up-close look at the INF
    </tr>
    <tr>
     <td>11:15</td>
-    <td>Speaker 1</td>
+    <td>Speaker 1 (TBC)</td>
     </tr>
     <tr>
     <td>12:00</td>
-    <td>Speaker 2</td>
+    <td>Speaker 2 (TBC)</td>
     </tr>
     <tr>
     <td>12:45</td>
-    <td>tea/lunch break</td>
+    <td>Lunch Break</td>
     </tr>
     <tr>
     <td>13:30</td>
@@ -126,12 +136,3 @@ The INFORM workshop is designed to give participants an up-close look at the INF
 </table> 
 </div>
 <p>
-<div class="row" style="padding-left:20%; padding-right:20%;">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORMPrototypes.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-The INFORM system prototypes, V1, V2 and V3.
-</div>
-
