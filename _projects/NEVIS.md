@@ -1,12 +1,12 @@
 ---
 layout: page
 title: NEVIS
-description: NEuromorphic VIsion System (NEVIS)
+description: <b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem
 main_title: <h1 align=center><b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem (<b>NEVIS</b>)</h1><hr>
 main_description: <h2 align=center>Building Brain-Inspired Vision Systems That See, and Think, Like We Do</h2>
 img: assets/img/NEVIS/kria_crop.png
 importance: 3
-category: other
+category: PostDoc
 related_publications: true
 ---
 <style>
@@ -32,11 +32,11 @@ Together, they show how we can make machines that don’t just _see_ like us, bu
 <h2> 👁️ Seeing the World in Edges, Not Pixels</h2>
 ---
 
-In our first paper, we focused on how to give an AI vision model a more **biological way of seeing**. The human visual cortex doesn’t start with whole objects, it starts with edges and orientations. Cells in the brain’s V1 region fire for horizontal or vertical lines, and higher layers gradually assemble those into shapes and objects.
+In our first paper, we focused on how to give an AI vision model a more **biological way of seeing**. The human visual cortex doesn’t start with whole objects, it starts with edges and orientations. Neurons in the brain fire for horizontal or vertical lines, and higher layers gradually assemble those into shapes and objects.
 
 We applied the same logic to a **spiking neural network (SNN)** trained on the **MNIST** handwritten digits dataset. Before the network even began learning, each image passed through simple **Prewitt filters** that extract edges. Instead of raw brightness values, the SNN saw lines and contours, the same way your brain does.
 
-This approach made the network’s learning more stable and interpretable. And when we added a twist, resetting about 10% of its neurons back to an untrained state after learning, something remarkable happened. Those “untrained” neurons acted like **error detectors**, firing only when the input didn’t belong to any known category. Suddenly, our system wasn’t just classifying digits, it could tell when something _wasn’t_ a digit at all.
+This approach made the network’s learning more stable and interpretable. And when we added a twist, resetting about 10% of its neurons back to an untrained state after learning, something interesting happened. Those “untrained” neurons acted like **error detectors**, firing only when the input didn’t belong to any known category. Suddenly, our system wasn’t just classifying digits, it could tell when something _wasn’t_ a digit at all.
 
 On tests with random images from the CIFAR-100 dataset, the edge-based, partially untrained model rejected over **96%** of non-digit inputs correctly, compared to near-zero for the pixel-based version. It became a system that knew what it knew, and what it didn’t.
 
@@ -104,9 +104,9 @@ In short, this is a step toward machines that see with structure, think with spi
 
 <h2>🔑 Key Takeaways</h2>
 ---
-- **Brains do it better, and smarter.** - By mimicking how the visual cortex processes edges and patterns, neuromorphic vision systems can learn more efficiently and handle unfamiliar data with greater robustness.
+- **Brains do it better, and smarter.** By mimicking how the visual cortex processes edges and patterns, neuromorphic vision systems can learn more efficiently and handle unfamiliar data with greater robustness.
 
-- **Untrained neurons can be useful.** Resetting a small portion of neurons after training helped the model recognise when it was seeing something new — adding a sense of “uncertainty awareness” that most AI systems lack.
+- **Untrained neurons can be useful.** Resetting a small portion of neurons after training helped the model recognise when it was seeing something new, adding a sense of “uncertainty awareness” that most AI systems lack.
 
 - **Edge-based preprocessing improves stability.** Feeding the network structured, edge-detected inputs (instead of raw pixels) led to smoother learning and better generalisation.
 
@@ -116,7 +116,7 @@ In short, this is a step toward machines that see with structure, think with spi
 
 <br>
 
-<h2>🚀 Looking Ahead</h2>
+<h2> 🔮 Looking Ahead </h2>
 ---
 
 The next challenge is to go beyond simple edge detection and digits. The human visual system processes hundreds of orientations, textures, and motion cues across many layers. Expanding NEVIS to capture that richness, and doing so efficiently on hardware, is the natural way to progress.

@@ -26,13 +26,13 @@ I’m a **Computer Vision Researcher** passionate about building intelligent sys
 With experience in both research and industry, I specialise in taking innovative concepts from prototype to fully functional systems. I’ve contributed to projects across a variety of domains, including:
 
 [Food Recognition](projects/) – developing systems that understand and classify food images.
-[Neuromorphic Vision](projects/) – exploring brain-inspired vision systems for efficient processing.
+[Neuromorphic Vision](projects/NEVIS) – exploring brain-inspired vision systems for efficient processing.
 [Media Authenticity](projects/) – detecting deepfake images and verifying visual content integrity.
 [Gait Recognition](projects/GaitRecognition) – analyzing human motion for identification and forensic applications.
 
 I’m skilled in **Python** and modern deep learning frameworks, with a strong track record of building robust applications. My research has resulted in a growing number of **publications in computer vision**, and I enjoy collaborating on initiatives that push the boundaries of AI while delivering meaningful real-world impact.
 
-Beyond my professional work, I’m fascinated by hands-on technology and creative experimentation. I spend my free time exploring [3D printing](projects/3DPrinting), Raspberry Pi [projects](projects/), and other maker activities that allow me to prototype ideas, tinker with hardware, and bring abstract concepts to life.
+Beyond my professional work, I’m fascinated by hands-on technology and creative experimentation. I spend my free time exploring 3D printing, Raspberry Pi projects, and other maker activities that allow me to prototype ideas, tinker with hardware, and bring abstract concepts to life.
 
 Ultimately, I’m driven by **curiosity**, **creativity**, and a desire to apply AI and computer vision in ways that make a _tangible_ difference. Whether through research, development, or collaborative projects, I strive to combine **technical excellence** with **innovative thinking** to solve challenging problems and create impactful solutions.
 

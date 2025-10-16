@@ -4,9 +4,9 @@ title: INFORM
 description: INtelligent FOod Recognition and Monitoring
 main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2><hr>
 main_description: <h2 align=center>Empowering Data-driven Decisions in Foodservice</h2>
-img: assets/img/INFORM/falconLogo.jpg
+img: assets/img/INFORM/food_before.jpg
 importance: 1
-category: other
+category: TBC
 related_publications: true
 ---
 
@@ -130,10 +130,10 @@ Through this closed-loop feedback system, INFORM not only provides real-time vis
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/2.jpg" title="Mask Visualisation Before Eating" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/INFORM/food_before.jpg" title="Mask Visualisation Before Eating" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/3.jpg" title="Mask Visualisation After Eating" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/INFORM/food_after.jpg" title="Mask Visualisation After Eating" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

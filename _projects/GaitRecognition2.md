@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Markerless Motion Capture
-description: For Gait Recognition
-main_title: <h1 align=center>Markerless Motion Capture Based Gait Recognition</h1><hr>
-main_description: <h2 align=center>Recognising People by How they Walk, Not How They Look </h2>
+title: Hybrid Method for Gait Recognition
+description: Using Appearance and Motion
+main_title: <h1 align=center>Gait Recognition</h1><hr>
+main_description: <h2 align=center>Combining shape and motion cues for higher accuracy</h2>
 
 img: assets/img/GaitRecognition/joints.png
 importance: 3
-category: PhD
+category: TBC
 related_publications: true
 ---
 
@@ -156,22 +156,22 @@ The way we move says more about us than we realise. Our gait carries subtle, dee
 Building a great machine learning model used to mean hours or days of trial and error. Now, tools like Auto-sklearn can do the heavy lifting for us. They automatically test algorithms, tune parameters, and find the best combination for the data at hand.
 
 **3D from 2D is possible:**
-<!-- Who needs expensive motion-capture suits anymore? -->
+Who needs expensive motion-capture suits anymore?
 Expensive motion capture suits still have a role to play in high precision application. However, today’s computer vision systems can reconstruct surprisingly accurate 3D movement from simple 2D video and it will only get better. Markerless motion capture takes ordinary footage and brings it to life in three dimensions, estimating joint angles, depth, and dynamics with impressive precision. It’s a leap that makes advanced motion analysis accessible to anyone with a camera.
 
 <br>
-## 🔮 Looking Ahead
+## 🚀 What’s Next
 
 ---
 Future directions for this research include:
 
 **Combining shape and motion cues for higher accuracy.**
-While gait alone can reveal a lot about a person, combining it with body shape information could make recognition even more reliable. This hybrid approach could significantly boost accuracy, especially in challenging or low-visibility scenarios.This topic is examined in greater detail in our subsequent gait recognition research. <!--, found [here](GaitRecognition2). -->
+While gait alone can reveal a lot about a person, combining it with body shape information could make recognition even more reliable. This hybrid approach could significantly boost accuracy, especially in challenging or low-visibility scenarios.This topic is examined in greater detail in our subsequent gait recognition research, found [here](GaitRecognition2). 
 
 **Using real-time SMPL models for live gait analysis.**
 By integrating the SMPL (Skinned Multi-Person Linear) model with real-time video processing, the system could analyze and visualize gait as it happens. This opens exciting possibilities, from live health monitoring and sports coaching to interactive animation and security applications where immediate feedback matters.
 
-**Further testing under realistic conditions.**
+**Further testing under realistic conditions**
 To ensure the system works beyond controlled lab environments, it needs to be tested more extensively in the real world, where people wear different clothes, carry bags, move in crowds, or walk under changing lighting. Evaluating performance under these natural variations will help make the technology more robust, adaptable, and ready for deployment in everyday situations.
 
 **Adding automatic gender estimation for better model fitting.**

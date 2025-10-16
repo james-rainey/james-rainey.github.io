@@ -4,7 +4,7 @@ title: Darts
 description: a project with a background image and giscus comments
 img: assets/img/5.jpg
 importance: 3
-category: other
+category: TBC
 giscus_comments: false
 ---
 

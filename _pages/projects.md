@@ -1,14 +1,21 @@
 ---
 layout: page
 title: projects
-main_title: projects
+main_title: <h1 align=center> My Projects </h1><hr>
+#main_description: <h2 align=center>A Growing Collection of My Projects</h2>
 permalink: /projects/
-description: A growing collection of my projects.
+description: A Growing Collection of My Projects.
 nav: true
-nav_order: 3
-display_categories: [work]
+nav_order: 2
+display_categories: [PostDoc, PhD] # TBC, Personal, 3D Prints
 horizontal: false
 ---
+<style>
+h2   {
+     color: #429435;
+     font-size:180%;
+     }
+</style>
 
 <!-- pages/projects.md -->
 <div class="projects">
