@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jrainey12.github.io/sitemap.xml
+Sitemap: https://james-rainey.github.io/sitemap.xml
