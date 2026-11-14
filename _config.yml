@@ -13,7 +13,7 @@ keywords: computer vision, deep learning, neuromorphic vision, food recognition,
 lang: en
 icon: 🖥️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://james-rainey.github.io # the base hostname & protocol for your site
+url: https://jamesrainey.co.uk # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 
 # -----------------------------------------------------------------------------
@@ -22,7 +22,7 @@ baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 
 serve_og_meta: true
 serve_schema_org: true
-og_image: https://james-rainey.github.io/assets/img/james.png
+og_image: https://jamesrainey.co.uk/assets/img/james.png
 
 # Search engine verification (optional)
 enable_google_verification: false
