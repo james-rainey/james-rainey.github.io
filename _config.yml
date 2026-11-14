@@ -7,9 +7,9 @@ first_name: James
 middle_name:
 last_name: Rainey
 description: >
-  James Rainey is a computer vision researcher building AI vision systems,
-  from embedded food recognition to neuromorphic vision and media authenticity.
-keywords: computer vision, deep learning, neuromorphic vision, food recognition, gait recognition, media forensics
+  James Rainey builds technology for trusted digital media with the JPEG Trust
+  standard, alongside AI for algal bloom monitoring and retinal imaging.
+keywords: trusted digital media, JPEG Trust, media provenance, computer vision, remote sensing, algal blooms, medical imaging, retinal imaging
 lang: en
 icon: jr-detection-green.svg # the favicon: an emoji, or an image name in /assets/img/
 logo: jr-detection-green.svg # the header logo, an image name in /assets/img/; leave blank to show initials
