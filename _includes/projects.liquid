@@ -1,5 +1,5 @@
 <a class="card" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" data-category="{{ project.category }}">
-  <div class="card-media">
+  <div class="card-media{% if project.img_fit == 'contain' %} card-media--contain{% endif %}">
     {% if project.img %}
       {% include figure.liquid path=project.img sizes="(min-width: 1080px) 340px, (min-width: 640px) 45vw, 95vw" alt="" %}
     {% else %}

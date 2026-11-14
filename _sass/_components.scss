@@ -231,6 +231,15 @@ a.card:hover .card-media img {
   transform: scale(1.04);
 }
 
+// Logos: show the whole image on a white panel instead of cropping it
+.card-media--contain {
+  background: #fff;
+
+  img {
+    object-fit: contain;
+  }
+}
+
 .card-body {
   padding: var(--space-5);
   display: flex;
@@ -256,11 +265,11 @@ a.card:hover .card-media img {
   }
 }
 
-// Research area tiles
+// Featured projects: three across on desktop, matching the projects grid
 .featured-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 }

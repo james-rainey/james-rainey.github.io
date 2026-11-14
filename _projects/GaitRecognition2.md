@@ -139,7 +139,7 @@ Expensive motion capture suits still have a role to play in high precision appli
 Future directions for this research include:
 
 **Combining shape and motion cues for higher accuracy.**
-While gait alone can reveal a lot about a person, combining it with body shape information could make recognition even more reliable. This hybrid approach could significantly boost accuracy, especially in challenging or low-visibility scenarios.This topic is examined in greater detail in our subsequent gait recognition research, found [here](GaitRecognition2). 
+While gait alone can reveal a lot about a person, combining it with body shape information could make recognition even more reliable. This hybrid approach could significantly boost accuracy, especially in challenging or low-visibility scenarios.
 
 **Using real-time SMPL models for live gait analysis.**
 By integrating the SMPL (Skinned Multi-Person Linear) model with real-time video processing, the system could analyze and visualize gait as it happens. This opens exciting possibilities, from live health monitoring and sports coaching to interactive animation and security applications where immediate feedback matters.

@@ -2,7 +2,11 @@
 <header class="site-header">
   <div class="container">
     <a class="site-brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark" aria-hidden="true">{{ site.first_name | slice: 0 }}{{ site.last_name | slice: 0 }}</span>
+      {% if site.logo and site.logo != '' %}
+        <img class="brand-logo" src="{{ site.logo | prepend: '/assets/img/' | relative_url | bust_file_cache }}" width="30" height="30" alt="">
+      {% else %}
+        <span class="brand-mark" aria-hidden="true">{{ site.first_name | slice: 0 }}{{ site.last_name | slice: 0 }}</span>
+      {% endif %}
       {{ site.first_name }} {{ site.last_name }}
     </a>
 

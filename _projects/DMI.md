@@ -3,6 +3,7 @@ title: Retinal Vessel Segmentation
 heading: "Retinal Vessel Segmentation for Diabetic Eye Disease"
 tagline: Segmenting blood vessels in OCTA scans to support treatment of diabetic macular ischaemia and oedema.
 description: OCTA vessel segmentation for DMI and DMO
+img: assets/img/DMI/eye.png
 importance: 3
 category: PostDoc
 icon: fa-solid fa-eye

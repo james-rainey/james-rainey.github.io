@@ -11,7 +11,8 @@ description: >
   from embedded food recognition to neuromorphic vision and media authenticity.
 keywords: computer vision, deep learning, neuromorphic vision, food recognition, gait recognition, media forensics
 lang: en
-icon: 🖥️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: jr-detection-green.svg # the favicon: an emoji, or an image name in /assets/img/
+logo: jr-detection-green.svg # the header logo, an image name in /assets/img/; leave blank to show initials
 
 url: https://jamesrainey.co.uk # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root

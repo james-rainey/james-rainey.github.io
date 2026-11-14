@@ -64,7 +64,7 @@ Our workshop brings together healthcare professionals, caterers, policymakers, a
 
 <p>
 👉 Join us for the <b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring(<b>INFORM</b>) Workshop, a hands-on event designed to give participants a comprehensive understanding of the INFORM system, an innovative platform developed to address challenges like food waste, nutrition management, and operational efficiency in healthcare settings. Through interactive demonstrations and live case studies, the workshop will showcase INFORM’s key features, practical applications, and the measurable benefits it can bring to hospitals, care homes, and other healthcare facilities.
-Click <a href="../projects/INFORM/">here</a> for an overview of the INFORM Project.
+Click <a href="/projects/INFORM">here</a> for an overview of the INFORM Project.
 </p>
 
 <p align=center>
