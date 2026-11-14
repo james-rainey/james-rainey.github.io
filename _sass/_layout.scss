@@ -1,53 +1,268 @@
-/******************************************************************************
- * Content
- ******************************************************************************/
-
-body {
-  padding-bottom: 70px;
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 66px;
-  }
-}
-
-body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 56px;
-}
-
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
-}
+// Page chrome: container, header, footer, sections.
 
 .container {
-  max-width: $max-content-width;
-}
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
 
-// Profile
-.profile {
-  img {
-    width: 100%;
+  @media (max-width: 600px) {
+    padding-inline: var(--space-4);
   }
 }
 
-// TODO: redefine content layout.
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: -100px;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-radius: var(--radius-sm);
 
-/******************************************************************************
- * Publications
- ******************************************************************************/
+  &:focus {
+    top: var(--space-3);
+  }
+}
 
-// TODO: redefine publications layout.
+// Header
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--header-bg);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
 
-/*****************************************************************************
-* Projects
-*****************************************************************************/
+  .container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    height: var(--header-height);
+  }
+}
 
-// TODO: redefine projects layout.
+.site-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-right: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  &:hover {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+}
+
+.site-nav {
+  ul {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &:hover {
+      color: var(--text);
+      background: var(--surface);
+      text-decoration: none;
+    }
+
+    &[aria-current="page"] {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+  }
+}
+
+.icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.15s var(--ease);
+
+  &:hover {
+    color: var(--text);
+    border-color: var(--border-strong);
+    background: var(--surface);
+  }
+}
+
+// Only one theme icon is visible at a time.
+.theme-toggle .fa-sun {
+  display: none;
+}
+
+@mixin dark-toggle-icons {
+  .theme-toggle .fa-sun {
+    display: inline;
+  }
+
+  .theme-toggle .fa-moon {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-toggle-icons;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-toggle-icons;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: inline-grid;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    display: none;
+
+    &.is-open {
+      display: block;
+    }
+
+    ul {
+      flex-direction: column;
+      padding: var(--space-3) var(--space-4) var(--space-4);
+    }
+
+    a {
+      font-size: var(--text-base);
+      padding: var(--space-3);
+    }
+  }
+}
+
+// Main
+.site-main {
+  flex: 1;
+  padding-block: var(--space-7) var(--space-8);
+
+  @media (max-width: 600px) {
+    padding-block: var(--space-6) var(--space-7);
+  }
+}
+
+.page-header {
+  margin-bottom: var(--space-7);
+  max-width: var(--prose-width);
+
+  h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .page-lead {
+    color: var(--text-muted);
+    font-size: var(--text-lg);
+    margin: 0;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.section {
+  margin-top: var(--space-8);
+
+  @media (max-width: 600px) {
+    margin-top: var(--space-7);
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+
+  h2 {
+    margin: 0;
+    font-size: var(--text-xl);
+  }
+
+  a {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-subtle);
+  font-size: var(--text-sm);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-block: var(--space-6);
+  }
+
+  p {
+    margin: 0;
+  }
+}

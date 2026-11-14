@@ -11,6 +11,7 @@ assets/libs/
 node_modules/
 vendor
 .idea
-assets/img/3DPrinting
-_projects/ALGAE_watch.md
+# Only the resized *_v2 3D printing photos are published
+assets/img/3DPrinting/*
+!assets/img/3DPrinting/*_v2.jpg
 _projects/3D_printing.md

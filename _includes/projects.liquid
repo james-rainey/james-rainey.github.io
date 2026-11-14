@@ -1,35 +1,22 @@
-<div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
+<a class="card" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" data-category="{{ project.category }}">
+  <div class="card-media">
+    {% if project.img %}
+      {% include figure.liquid path=project.img sizes="(min-width: 1080px) 340px, (min-width: 640px) 45vw, 95vw" alt="" %}
+    {% else %}
+      <div class="card-placeholder"><i class="{{ project.icon | default: 'fa-solid fa-flask' }}" aria-hidden="true"></i></div>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.tagline | default: project.description }}</p>
+    {% if include.featured %}
+      {% if project.my_role and project.my_role != '' %}<p><strong>My role:</strong> {{ project.my_role | escape }}</p>{% endif %}
+      {% if project.featured_result %}<p class="featured-result">{{ project.featured_result | escape }}</p>{% endif %}
+    {% endif %}
+    {% if project.tags %}
+      <ul class="chip-list">
+        {% for tag in project.tags limit: 3 %}<li class="chip">{{ tag }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</a>

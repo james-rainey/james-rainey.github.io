@@ -1,9 +1,0 @@
-github_users:
-  - jrainey12
-
-repo_description_lines_max: 2
-
-github_repos:
-  - jrainey12/gait-transformer
-  - jrainey12/view_angle_classifier_v2
-  - jrainey12/darts_cv

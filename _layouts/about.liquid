@@ -1,80 +1,77 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<section class="hero">
+  <div class="hero-text">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+    {% if page.subtitle %}<p class="hero-role">{{ page.subtitle }}</p>{% endif %}
+    {% if page.pitch %}<p class="hero-pitch">{{ page.pitch }}</p>{% endif %}
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">View projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a class="btn btn-ghost" href="{{ '/cv/' | relative_url }}">CV</a>
+      {% include social.liquid %}
+    </div>
+  </div>
+  {% if page.profile.image %}
+    <div class="hero-photo">
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      {% include figure.liquid loading="eager" path=profile_image_path sizes="260px" alt="Photo of James Rainey" cache_bust=true %}
+    </div>
+  {% endif %}
+</section>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+{% if page.featured_projects %}
+  <section class="section" aria-labelledby="featured-projects-heading">
+    <div class="section-header">
+      <h2 id="featured-projects-heading">Featured projects</h2>
+      <a href="{{ '/projects/' | relative_url }}">All projects &rarr;</a>
+    </div>
+    <div class="card-grid featured-grid">
+      {% for slug in page.featured_projects %}
+        {% assign project = site.projects | where: "slug", slug | first %}
+        {% if project %}{% include projects.liquid featured=true %}{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+<section class="section">
+  <div class="section-header"><h2>About</h2></div>
+  <div class="prose">{{ content }}</div>
+</section>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+{% if page.research_areas %}
+  <section class="section">
+    <div class="section-header">
+      <h2>Research areas</h2>
+      <a href="{{ '/projects/' | relative_url }}">All projects &rarr;</a>
+    </div>
+    <div class="area-grid">
+      {% for area in page.research_areas %}
+        {% if area.url %}<a class="area" href="{{ area.url | relative_url }}">{% else %}<div class="area">{% endif %}
+          <span class="area-icon"><i class="{{ area.icon }}" aria-hidden="true"></i></span>
+          <h3>{{ area.title }}</h3>
+          <p>{{ area.text }}</p>
+        {% if area.url %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
+{% if page.announcements.enabled and site.news.size > 0 %}
+  <section class="section">
+    <div class="section-header"><h2>News</h2></div>
+    {% include news.liquid limit=page.announcements.limit %}
+  </section>
+{% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
-</div>
+{% if page.selected_papers %}
+  <section class="section">
+    <div class="section-header">
+      <h2>Selected publications</h2>
+      <a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+    </div>
+    {% include selected_papers.liquid %}
+  </section>
+{% endif %}

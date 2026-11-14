@@ -5,8 +5,8 @@
     "image": "",
     "email": "james.rainey@newcastle.ac.uk",
     "phone": "",
-    "url": "https://github.com/james-rainey",
-    "summary": "Innovative and results-driven Computer Vision Researcher with extensive experience in developing advanced computer vision solutions.",
+    "url": "https://james-rainey.github.io",
+    "summary": "Computer vision researcher with experience taking AI vision systems from early research to working products, across embedded food recognition, neuromorphic vision, media authenticity and gait recognition.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -16,20 +16,43 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "james-rainey",
+        "url": "https://github.com/james-rainey"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "james-rainey-b928b1a8",
+        "url": "https://www.linkedin.com/in/james-rainey-b928b1a8"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0002-8894-8327",
+        "url": "https://orcid.org/0000-0002-8894-8327"
       }
     ]
   },
   "work": [
     {
+      "name": "Newcastle University",
+      "position": "Postdoctoral Researcher",
+      "url": "https://www.ncl.ac.uk/computing/",
+      "startDate": "2025-12-01",
+      "endDate": "present",
+      "summary": "Computer vision research, including satellite-based algae bloom monitoring."
+    },
+    {
       "name": "Falcon Foodservice Equipment/Newcastle University",
       "position": "KTP Research Associate",
       "startDate": "2023-12-10",
-      "endDate": "present",
-      "summary": "Developing INtelligent FOod Recognition and Monitoring system (INFORM).",
-      "highlights": ["Advanced from early concept to functioning product.","Acquired Patent for INFORM.","Disseminated research via publications."]
+      "endDate": "2025-12-01",
+      "summary": "Developed the INtelligent FOod Recognition and Monitoring system (INFORM) with Falcon Foodservice Equipment.",
+      "highlights": [
+        "Took INFORM from early concept to a working product.",
+        "Granted UK patent GB2616522 for INFORM.",
+        "FEA Apprentice Award 2024: Highly Commended.",
+        "Disseminated research via publications."
+      ]
     },
     {
       "name": "Newcastle University",
@@ -37,8 +60,11 @@
       "startDate": "2022-09-01",
       "endDate": "2023-07-01",
       "summary": "Worked on various research projects.",
-      "highlights": ["Early development on INtelligent FOod Recognition and Monitoring system (INFORM).",
-      "Created a blockchain-based framework for media authentication", "Developed a Neuromorphic Vision System using spiking neural networks"]
+      "highlights": [
+        "Early development on INtelligent FOod Recognition and Monitoring system (INFORM).",
+        "Created a blockchain-based framework for media authentication",
+        "Developed a Neuromorphic Vision System using spiking neural networks"
+      ]
     },
     {
       "name": "Stirling University",
@@ -48,16 +74,16 @@
       "summary": "Initial development of an embedded AI system for food recognition."
     }
   ],
-
   "education": [
     {
       "institution": "Queen's University Belfast",
       "location": "Belfast, Northern Ireland",
       "url": "https://www.qub.ac.uk",
-      "area": "Gait Recognition - Developed a method for gait recognition using 3D Markerless Motion Capture.",
+      "area": "Computer Science",
       "studyType": "PhD",
       "startDate": "2016-10-01",
-      "endDate": "2020-12-01"
+      "endDate": "2020-12-01",
+      "summary": "Thesis on gait recognition using 3D markerless motion capture."
     },
     {
       "institution": "Queen's University Belfast",
@@ -68,7 +94,6 @@
       "startDate": "2013-09-01",
       "endDate": "2016-06-01"
     }
-
   ],
   "skills": [
     {
@@ -109,6 +134,19 @@
         "Various Cameras and Sensors",
         "3D Printers"
       ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "UK Patent GB2616522: INFORM, Intelligent Food Recognition and Monitoring",
+      "awarder": "UK Intellectual Property Office",
+      "summary": "Edge AI system for real-time food recognition and monitoring, developed with Falcon Foodservice Equipment and Newcastle University."
+    },
+    {
+      "title": "FEA Apprentice Award: Highly Commended",
+      "awarder": "Foodservice Equipment Association",
+      "date": "2024",
+      "summary": "Recognised for work on INFORM during the KTP with Falcon Foodservice Equipment."
     }
   ]
 }

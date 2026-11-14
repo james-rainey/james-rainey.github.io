@@ -2,38 +2,50 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Associate at <a href='https://www.ncl.ac.uk/computing/staff/profile/jamesrainey.html'>Newcastle University</a>
+eyebrow: Computer Vision Researcher
+subtitle: Postdoctoral Researcher at <a href='https://www.ncl.ac.uk/computing/staff/profile/jamesrainey.html'>Newcastle University</a>
+pitch: I build AI-powered vision systems that take research ideas from prototype to real-world deployment, from hospital food monitoring and satellite algae detection to retinal imaging.
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p> </p>
+  image: james.png
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+featured_projects: [INFORM, ALGAE_watch]
+
+research_areas:
+  - title: Food Recognition
+    icon: fa-solid fa-utensils
+    text: Systems that recognise, segment and monitor food on embedded hardware.
+    url: /projects/INFORM
+  - title: Algae Detection
+    icon: fa-solid fa-satellite
+    text: Monitoring harmful algal blooms by fusing radar and optical satellite imagery.
+    url: /projects/ALGAE_watch
+  - title: Medical Imaging
+    icon: fa-solid fa-eye
+    text: Segmenting retinal blood vessels in OCTA scans to support treatment of diabetic eye disease.
+    url: /projects/DMI
+  - title: Neuromorphic Vision
+    icon: fa-solid fa-brain
+    text: Brain-inspired spiking neural networks running on low-power FPGAs.
+    url: /projects/NEVIS
+  - title: Media Authenticity
+    icon: fa-solid fa-shield-halved
+    text: Detecting manipulated images and verifying where visual content came from.
+    url: /projects/TRAIT
+  - title: Gait Recognition
+    icon: fa-solid fa-person-walking
+    text: Identifying people by how they walk using markerless 3D motion capture.
+    url: /projects/GaitRecognition
+
+selected_papers: true
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: true
+  limit: 5
 ---
 
-I’m a **Computer Vision Researcher** passionate about building intelligent systems that enable machines to see, understand, and interact with the world. My work focuses on developing AI-powered vision solutions that seamlessly bridge the gap between **cutting-edge research** and **real-world applications**, turning complex ideas into practical, high-impact systems.
+My research combines computer vision with practical system development. I work on embedded food monitoring, satellite-based algae detection and retinal vessel segmentation, with experience spanning model development, hardware integration and evaluation.
 
-With experience in both research and industry, I specialise in taking innovative concepts from prototype to fully functional systems. I’ve contributed to projects across a variety of domains, including:
+I'm also involved in the [JPEG Trust standard](https://jpeg.org/jpegtrust/), which provides a framework for assessing trust in digital media. Explore [OpenJPT](https://openjpt.org/) to learn more about JPEG Trust tools.
 
-<p><a href="404">Algae Detection</a> - creating a method for detecting algae growth using satellite imagery.</p>
-<p><a href="404">Food Recognition</a> – developing systems that understand and classify food images.</p>
-<p><a href="projects/NEVIS">Neuromorphic Vision</a> – exploring brain-inspired vision systems for efficient processing.</p>
-<p><a href="projects/TRAIT">Media Authenticity</a> – detecting deepfake images and verifying visual content integrity.</p>
-<p><a href="projects/GaitRecognition">Gait Recognition</a> – analyzing human motion for identification and forensic applications.</p>
-
-I’m skilled in **Python** and modern deep learning frameworks, with a strong track record of building robust applications. My research has resulted in a growing number of **publications in computer vision**, and I enjoy collaborating on initiatives that push the boundaries of AI while delivering meaningful real-world impact.
-
-Beyond my professional work, I’m fascinated by hands-on technology and creative experimentation. I spend my free time exploring 3D printing, Raspberry Pi projects, and other maker activities that allow me to prototype ideas, tinker with hardware, and bring abstract concepts to life.
-
-Ultimately, I’m driven by **curiosity**, **creativity**, and a desire to apply AI and computer vision in ways that make a _tangible_ difference. Whether through research, development, or collaborative projects, I strive to combine **technical excellence** with **innovative thinking** to solve challenging problems and create impactful solutions.
-<br>
+Outside of work I'm into hands-on technology and making things: 3D printing, Raspberry Pi projects and other maker activities that let me prototype ideas and tinker with hardware.

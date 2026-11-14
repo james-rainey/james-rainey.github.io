@@ -1,24 +1,19 @@
 ---
-layout: page
 title: Markerless Motion Capture
+heading: "Markerless Motion Capture for Gait Recognition"
+tagline: Recognising people by how they walk, not how they look.
 description: For Gait Recognition
-main_title: <h1 align=center>Markerless Motion Capture Based Gait Recognition</h1><hr>
-main_description: <h2 align=center>Recognising People by How they Walk, Not How They Look </h2>
 img: assets/img/GaitRecognition/joints.png
 importance: 3
 category: PhD
 related_publications: true
+tags: [Biometrics, 3D pose, Motion capture]
+# TODO(human): Describe your contribution, dates and current status.
+# Empty fields stay hidden. My role also appears on featured cards.
+my_role: ""
+project_dates: ""
+project_status: ""
 ---
-
-<style>
-h2   {
-     color: #429435;
-     font-size:180%;
-     }
-</style>
-
----
-
 
 Most biometric systems rely on faces, fingerprints, or iris scans. Even existing gait recognition techniques depend on body shape or silhouette-based features, which can easily be thrown off by clothing, lighting, or camera angle.
 
@@ -26,10 +21,7 @@ I wanted to build something different: a system that looks only at **movement**,
 
 *Based on my paper “Gait Recognition from Markerless 3D Motion Capture” {% cite rainey2019gait %}*
 
-<br>
-
 ## Goal
----
 
 The main goal of this project was to create a **movement-only gait recognition system** that uses standard camera footage without relying on depth sensors or marker based cpature for gait recognition.
 
@@ -37,9 +29,8 @@ The approach focuses purely on **body motion**, not shape or looks, which is der
 
 The ultimate ambition was to develop a system that performs **competitively** with methods using advanced motion capture systems, without requiring expensive capture equipment.  
 
-<br>
 ## How It Works
----
+
 Here’s the full pipeline:
 
 1. **2D Pose Detection**  
@@ -57,8 +48,6 @@ Here’s the full pipeline:
 5. **Automated Classification**  
    I used **Auto-sklearn**, an AutoML framework, to automatically test, tune, and combine the best machine learning models for classifying these gait signatures.  
 
-<br>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/GaitRecognition/deepercut_joints_cropped.png" title="Joint Extraction" class="img-fluid rounded z-depth-1" %}
@@ -74,10 +63,7 @@ Here’s the full pipeline:
 Joints extracted from an image (left), joints fitted to a synthetic body model (centre) and a model extracted from an image (right).  
 </div>
 
-<br>
-
 ## Tech Stack
----
 
 A variety of tools were required to make this possible:
 
@@ -93,13 +79,10 @@ A variety of tools were required to make this possible:
 | Output | ROC, AUC, and rank-based identification metrics |
 
 </div>
-<br>
 
 ## Challenges & Solutions
----
 
 Throughout the project, numerous challenges emerged but none proved beyond reach. Each obstacle demanded patience, experimentation, and creative thinking, turning setbacks into valuable learning experiences. In the end, every issue found a solution, reinforcing the project’s success and the adaptability of the approach.
-<br>
 
 |Challenge | My Approach |
 |----------|--------------|
@@ -108,13 +91,9 @@ Throughout the project, numerous challenges emerged but none proved beyond reach
 | **Algorithm selection** | Let Auto-sklearn handle model and hyperparameter search with Bayesian optimisation. |
 | **Explaining the final results** | Compared against methods using Kinect and marker-based skeleton data to contextualise performance. |
 
-<br>
-
 ## Results
----
 
 Even though the model only used 2D video, it performed on par with systems using 3D Kinect depth data or traditional motion capture setups to extract skeleton information, a big win for accessibility and scalability.
-<br>
 
 <div align=center markdown=1>
 
@@ -127,10 +106,8 @@ Even though the model only used 2D video, it performed on par with systems using
 
 </div>
 
-<br>
-
 ## Why This Matters
----
+
 **Non-intrusive:**
 This method operates without requiring the subject’s active participation or awareness. Unlike other biometric systems that need fingerprints, iris scans, or facial alignment, motion-based analysis can identify and track individuals naturally as they go about their activities. This makes it ideal for real-world scenarios where cooperation cannot be expected, such as forensic video analysis.
 
@@ -145,9 +122,8 @@ The same underlying technology can be extended to multiple fields and at differe
 
 Together, these points demonstrate that our movement patterns, *how* we walk and move, are as unique and informative as our facial features. This insight opens up powerful possibilities for recognition, behavioral analysis, and creative applications across a wide range of industries.
 
-<br>
 ## Key Takeaways
----
+
 **Movement is identity:**
 The way we move says more about us than we realise. Our gait carries subtle, deeply personal signatures, tiny variations in stride, rhythm, and posture that make each of us instantly recognisable. Just as a face can tell who we are, so can the way we walk, turn, or gesture. Movement, in this sense, becomes an extension of identity, an invisible fingerprint in motion.
 
@@ -158,10 +134,8 @@ Building a great machine learning model used to mean hours or days of trial and 
 <!-- Who needs expensive motion-capture suits anymore? -->
 Expensive motion capture suits still have a role to play in high precision application. However, today’s computer vision systems can reconstruct surprisingly accurate 3D movement from simple 2D video and it will only get better. Markerless motion capture takes ordinary footage and brings it to life in three dimensions, estimating joint angles, depth, and dynamics with impressive precision. It’s a leap that makes advanced motion analysis accessible to anyone with a camera.
 
-<br>
 ## Looking Ahead
 
----
 Future directions for this research include:
 
 **Combining shape and motion cues for higher accuracy.**
@@ -176,14 +150,8 @@ To ensure the system works beyond controlled lab environments, it needs to be te
 **Adding automatic gender estimation for better model fitting.**
 Incorporating a gender estimation module could help improve model calibration and body-shape fitting, since male and female body structures differ in proportion and movement dynamics. This doesn’t aim to categorise people socially, but rather to enhance the underlying biomechanical modeling, making gait reconstruction and identity recognition more accurate and anatomically consistent.
 
-<br>
-
 ## Reflection
----
+
 This project was a fascinating intersection of biomechanics, computer vision, and machine learning. It taught me how deeply *motion* defines identity, and how technology can uncover those patterns invisibly.
 
 It also reminded me that innovation doesn’t always need more data or sensors, sometimes it just takes a smarter way to look at what we already have.
-
-<br>
-
-

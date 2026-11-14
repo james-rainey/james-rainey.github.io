@@ -1,127 +1,93 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+{% assign r = site.data.resume %}
+<header class="page-header">
+  <p class="eyebrow">Curriculum vitae</p>
+  <h1>{{ r.basics.name }}</h1>
+  <p class="page-lead">{{ r.basics.summary }}</p>
+  {% if page.cv_pdf %}
+    <p style="margin-top: var(--space-5)">
+      <a class="btn btn-primary" href="{% if page.cv_pdf contains '://' %}{{ page.cv_pdf }}{% else %}{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">
+        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF
+      </a>
+    </p>
+  {% endif %}
+</header>
 
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-
-    <article>
-      <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
+{% if r.work %}
+  <section class="cv-section">
+    <h2><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</h2>
+    <ol class="timeline">
+      {% for job in r.work %}
+        <li class="timeline-item{% if job.endDate == 'present' %} is-current{% endif %}">
+          <span class="timeline-date">
+            {{ job.startDate | date: '%b %Y' }} &ndash;
+            {% if job.endDate == 'present' %}Present{% else %}{{ job.endDate | date: '%b %Y' }}{% endif %}
+          </span>
+          <h3>{{ job.position }}</h3>
+          <div class="timeline-org">{% if job.url %}<a href="{{ job.url }}">{{ job.name }}</a>{% else %}{{ job.name }}{% endif %}</div>
+          {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
+          {% if job.highlights %}
+            <ul>
+              {% for h in job.highlights %}<li>{{ h }}</li>{% endfor %}
+            </ul>
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
-            <div>
-              {% case data[0] %}
-                {% when 'basics' %}
-                  {% include resume/basics.liquid %}
-                {% when 'education' %}
-                  {% include resume/education.liquid %}
-                {% when 'work' %}
-                  {% include resume/work.liquid %}
-                {% when 'volunteer' %}
-                  {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
-                {% when 'awards' %}
-                  {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
-                {% when 'publications' %}
-                  {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
-                {% when 'references' %}
-                  {% include resume/references.liquid %}
-                {% else %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endif %}
 
-              {% endcase %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-{% endunless %}
+{% if r.education %}
+  <section class="cv-section">
+    <h2><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+    <ol class="timeline">
+      {% for ed in r.education %}
+        <li class="timeline-item">
+          <span class="timeline-date">{{ ed.startDate | date: '%Y' }} &ndash; {{ ed.endDate | date: '%Y' }}</span>
+          <h3>{{ ed.studyType }}{% if ed.area %}, {{ ed.area }}{% endif %}</h3>
+          <div class="timeline-org">{% if ed.url %}<a href="{{ ed.url }}">{{ ed.institution }}</a>{% else %}{{ ed.institution }}{% endif %}</div>
+          {% if ed.summary %}<p>{{ ed.summary }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endif %}
+
+{% if r.awards %}
+  <section class="cv-section">
+    <h2><i class="fa-solid fa-award" aria-hidden="true"></i> Patents &amp; awards</h2>
+    <ol class="timeline">
+      {% for a in r.awards %}
+        <li class="timeline-item">
+          {% if a.date.size == 4 %}<span class="timeline-date">{{ a.date }}</span>{% elsif a.date %}<span class="timeline-date">{{ a.date | date: "%b %Y" }}</span>{% endif %}
+          <h3>{% if a.url %}<a href="{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}</h3>
+          {% if a.awarder %}<div class="timeline-org">{{ a.awarder }}</div>{% endif %}
+          {% if a.summary %}<p>{{ a.summary }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endif %}
+
+{% if r.skills %}
+  <section class="cv-section">
+    <h2><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Skills</h2>
+    <div class="skill-grid">
+      {% for group in r.skills %}
+        <div>
+          <h3>{{ group.name }}</h3>
+          <ul class="chip-list">
+            {% for k in group.keywords %}<li class="chip">{{ k }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<section class="cv-section">
+  <h2><i class="fa-solid fa-book-open" aria-hidden="true"></i> Publications</h2>
+  <p>See the <a href="{{ '/publications/' | relative_url }}">publications page</a> for the full list with links.</p>
+</section>

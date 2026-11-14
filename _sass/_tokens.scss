@@ -1,0 +1,87 @@
+// Design tokens. Every colour used on the site comes from here.
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.125rem, 1rem + 0.4vw, 1.3rem);
+  --text-xl: clamp(1.35rem, 1.1rem + 0.8vw, 1.7rem);
+  --text-2xl: clamp(1.7rem, 1.3rem + 1.4vw, 2.3rem);
+  --text-3xl: clamp(2.3rem, 1.6rem + 2.6vw, 3.6rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+
+  --max-width: 1080px;
+  --prose-width: 72ch;
+  --header-height: 64px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@mixin light-theme {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --surface-raised: #ffffff;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --accent: #0f766e;
+  --accent-hover: #115e59;
+  --accent-soft: #ccfbf1;
+  --accent-contrast: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.78);
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.06);
+  --shadow-hover: 0 2px 4px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(15, 23, 42, 0.1);
+  --code-bg: #f1f5f9;
+}
+
+@mixin dark-theme {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --surface: #121921;
+  --surface-raised: #161f29;
+  --text: #e6edf3;
+  --text-muted: #a3b1bf;
+  --text-subtle: #8494a5;
+  --border: #223040;
+  --border-strong: #2f4052;
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-soft: rgba(45, 212, 191, 0.14);
+  --accent-contrast: #04211e;
+  --header-bg: rgba(11, 15, 20, 0.75);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.4);
+  --code-bg: #121921;
+}
+
+:root {
+  @include light-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-theme;
+}

@@ -1,171 +1,136 @@
 ---
-layout: page
 title: INFORM
-description: INtelligent FOod Recognition and Monitoring
-main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>telligent <b>FO</b>od <b>R</b>ecognition and <b>M</b>onitoring</h2><hr>
-main_description: <h2 align=center>Empowering Data-driven Decisions in Foodservice</h2>
+heading: "INFORM: Intelligent Food Recognition and Monitoring"
+tagline: An edge AI system that tracks what patients eat and what goes to waste, plate by plate.
+description: Intelligent Food Recognition and Monitoring
 img: assets/img/INFORM/food_before.jpg
+featured_result: "Food detection in 0.65 seconds on a Raspberry Pi 5."
 importance: 1
-category: TBC
+category: PostDoc
 related_publications: true
+tags: [Edge AI, Food recognition, Patent]
+# TODO(human): Describe your contribution, dates and current status.
+# Empty fields stay hidden. My role also appears on featured cards.
+my_role: ""
+project_dates: ""
+project_status: ""
 ---
 
-<style>
-body {
-     background-color: #d9e8f2
-     }
-h1   {
-     color: #57859a;
-     font-size:350%;
-     font-family:helvetica;
-     }
-h2   {
-     color: #57859a;
-     font-size:250%;
-     }
-p    {
-     color: black;
-     }
-</style>
+In hospitals and care homes, what patients eat is still usually recorded with pen and paper. That makes it slow, error-prone and almost impossible to do at scale, even though food is central to recovery. Over 160,000 people over 75 in UK care homes are estimated to be malnourished, and malnourished patients cost up to four times more to treat. At the same time, up to 18% of food in NHS hospitals is wasted, the equivalent of one in every six meals.
 
-<br>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-<p>
-<b>INtelligent FOod Recognition and Monitoring (INFORM)</b>(UK Patent: GB2616522) is an advanced edge AI system designed to accurately identify, analyse, and monitor food in real time. Leveraging cutting-edge artificial intelligence and computer vision technologies, INFORM enables automated food recognition, supporting smarter decisions in nutrition tracking, waste reduction, and quality control.
+**INtelligent FOod Recognition and Monitoring (INFORM)** (UK Patent GB2616522) is the first end-to-end edge AI system for analysing food consumption and plate waste in hospitals. It identifies every food item on a plate, estimates its weight, temperature and nutritional content, and sends the results to a dashboard, all on a Raspberry Pi.
 
-</p>
-<p>
-The system was created through a close collaboration between Falcon Foodservice Equipment and Newcastle University with support from Innovate UK, bringing together the expertise of leading engineers and academic researchers.
-
-</p>        
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/INFORMPrototypes.png" title="INFORM System" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">
-        <p>The INFORM system prototypes: v1, v2 and v3.</p>
-        </div>
-    </div>
-</div>
+INFORM was developed through a Knowledge Transfer Partnership between Falcon Foodservice Equipment and Newcastle University, supported by Innovate UK. The work is described in two papers: an early embedded prototype {% cite rainey2024food %} and the full engineered system {% cite rainey2026inform %}.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/logosTransparent.png" title="logos" class="img-fluid" %}
-    </div>
-
-<div class="col-sm mt-3 mt-md-0">
-<br>
-<p>This partnership combines real-world foodservice industry insight with state-of-the-art AI innovation, resulting in a practical, scalable solution that enhances efficiency and sustainability in food management.
-</p>
-<p>
-Be part of the conversation on improving nutrition and sustainability in healthcare and beyond. Register for the INFORM workshop to see the system in action and discover its real-world impact.
-Read more about the upcoming INFORM Workshop <a href='../../INFORM_Workshop'>here</a>.</p>
-</div>
-</div>
-
-
-<h2>Who Benefits from INFORM?</h2>
-<hr>
-<p>
-The INFORM system is initially designed for implementation within hospital environments, where precise monitoring of food waste and nutritional intake can play a crucial role in improving patient health outcomes. By tracking what patients consume and identifying patterns in food preferences or waste, the system supports healthcare providers in tailoring meals to individual dietary needs, enhancing patient satisfaction, and reducing unnecessary food production. In the long term, INFORM contributes to maintaining high standards of food quality and delivery efficiency, fostering a more sustainable and cost-effective food management process across the healthcare setting.
-</p>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/benefits.png" title="INFORM System benefits" class="img-fluid" %}
-    </div>
-</div>
-<!---<div class="caption">
-<p>The benefits of the information provided by INFORM. </p>
-</div>
--->
-<p>
-While INFORM is initially designed for hospital settings, its potential applications extend far beyond healthcare. The system can be seamlessly adapted to any environment where food is prepared and served, offering valuable insights and benefits across a range of industries.
-</p>
-
-<p>
-In school canteens, for instance, INFORM could play a key role in promoting healthier eating habits among students. By monitoring food choices, consumption patterns, and waste levels, schools can better understand what children are eating, and what they’re not. This information can be used to design more appealing, nutritious menus and to support educational initiatives around balanced diets and sustainability.
-</p>
-<p>
-Similarly, in restaurants and catering establishments, INFORM offers both owners and customers a consistent, data-driven measure of food quality and portion control. Restaurant managers can use this data to refine menu offerings, reduce waste, and maintain consistent standards, while diners benefit from enhanced transparency and confidence in the food they’re served.
-</p>
-<p>
-By bridging the gap between technology, nutrition, and sustainability, INFORM has the potential to revolutionise how food quality and consumption are monitored across diverse sectors, from education and hospitality to corporate dining and beyond.
-</p>
-
-
-<h2>How does it work?</h2>
-<hr>
-<p>
-The INFORM system is built around a sophisticated array of integrated sensors that work together to identify food items, measure their temperature, and determine the precise weight of each component on a plate. This multi-sensor approach enables the system to capture comprehensive data about every meal with remarkable speed and accuracy.
-</p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/INFORMFlow.png" title="INFORM System flowchart" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/INFORMPrototypes.png" title="INFORM prototypes" alt="Three INFORM prototype units" %}
     </div>
 </div>
 <div class="caption">
-<p>The INFORM system flow, showing how INFORM impacts a hospital workflow. </p>
+The INFORM prototypes: v1, v2 and v3.
 </div>
 
+## How it works
 
-<p>
-Each plate used within the system is embedded with a unique identification tag, allowing INFORM to instantly recognise it as soon as it is placed on the platform. Once detected, the system automatically initiates the food recognition process. In just a few seconds, INFORM identifies all food items present, calculates their individual weights, and records their temperatures, all with an impressive accuracy rate exceeding 90%.
-</p>
-<p>
-This seamless automation not only ensures reliable data collection but also minimises human error, creating a more efficient workflow for food service operations. The result is a fast, precise, and intelligent system that supports improved quality control, nutrition tracking, and waste management.
-</p>
+Each plate carries a cheap, waterproof NFC tag. When a plate is placed under INFORM, the system reads the tag, captures images and runs a four-stage pipeline:
 
-
-<h2>Actionable Results</h2>
-<hr>
-<p>
-When a plate is returned after a meal, the same intelligent scanning process is performed again. By comparing the data captured before and after eating, the INFORM system can automatically determine how much food has been consumed and how much has been wasted. From these comparisons, detailed insights are generated, including precise measurements of food waste, nutritional intake, and the associated cost of the uneaten food.
-</p>
-<p>
-This valuable data is then processed and distributed to the relevant stakeholders in a clear and actionable format via the INFORM dashboard. For example, dietitians can access nutritional data to better understand patient consumption patterns and adjust meal plans accordingly, while kitchen managers and food suppliers can review food quality and waste metrics to refine menus, improve portion control, and enhance operational efficiency.
-<p>
-Through this closed-loop feedback system, INFORM not only provides real-time visibility into food consumption and waste but also supports data-driven decision-making across multiple levels of the foodservice and healthcare ecosystem.
-</p>
+1. **Food detection:** a lightweight YOLOv8 model finds each food item and draws a bounding box around it.
+2. **Food segmentation:** EdgeSAM, a version of the Segment Anything Model optimised for edge devices, turns each box into a precise mask. It is zero-shot, so it needs no hand-labelled segmentation data.
+3. **Weight estimation:** a stereo camera pair gives a depth map via semi-global matching. Combined with the masks, this gives each food's volume, which a per-food calibration converts to weight.
+4. **Temperature estimation:** a thermal camera reads the temperature of each masked item, corrected for the difference between surface and core temperature.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/food_before.jpg" title="Mask Visualisation Before Eating" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/pipeline.png" title="INFORM pipeline" alt="Flow diagram: plate images feed detection, segmentation, weight and temperature estimation, then the dashboard" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/food_after.jpg" title="Mask Visualisation After Eating" class="img-fluid rounded z-depth-1" %}
+    <div class="figure-narrow">
+        {% include figure.liquid path="assets/img/INFORM/hardware.png" title="INFORM hardware" alt="Exploded view of the INFORM hardware" %}
     </div>
 </div>
 <div class="caption">
-    <p>Visualisations of the food detection, before (left) and after (right) part of the food has been eaten.</p>
+Left: the INFORM pipeline. Right: the hardware. The camera head (1–5) holds two optical cameras, a thermal camera, an LED array and a diffusion panel; the base (6–8) holds the NFC reader and a Raspberry Pi.
 </div>
 
-<h2>Evaluation</h2>
-<hr>
-<p>
-A comprehensive series of tests has been carried out to evaluate the INFORM system’s performance, both in controlled settings and real-world environments.
-Initial testing took place in-house at Falcon, where engineers assessed the system’s technical capabilities, accuracy, and reliability under laboratory conditions. These trials allowed the team to fine-tune the AI algorithms and optimise hardware integration for consistent results.
-</p>
-<p>
-Further evaluations were then conducted in a live kitchen environment at Newcastle University, providing valuable insights into how the system performs in everyday operational scenarios. This real-world testing phase highlighted INFORM’s ability to adapt to variable lighting, diverse food presentations, and the fast-paced nature of a working kitchen. Together, these tests have been instrumental in validating the system’s robustness, usability, and readiness for wider deployment.
-</p>
+When the plate comes back after the meal, the same scan runs again. Comparing the two scans gives how much of each food was eaten and how much was wasted. Combined with the nutritional content of each dish, that gives each patient's actual intake.
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/INFORM/NewcastleTestingSetup.jpg" title="INFORM Testing Setup" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/segmentation.png" title="Segmentation examples" alt="Full and partially eaten plates with coloured segmentation masks" %}
     </div>
 </div>
 <div class="caption">
-<p>The INFORM system prototype being prepared for testing.</p>
+Segmentation masks (right) for a full plate (top) and the same plate partly eaten (bottom).
 </div>
 
-<p>
-Further information on the INFORM system performance can be found in the conference publication{% cite rainey2024food %}.
-</p>
+## Actionable results
 
-<h2>What's Next?</h2>
-<hr>
-<p>
-The next stage for INFORM is all about putting the system into the hands of real users and demonstrating its value in everyday settings. By moving beyond the lab and into real-world environments, INFORM can showcase how it streamlines operations, reduces waste, and delivers meaningful insights that drive better decisions. Gathering feedback from users will also play a key role in refining and enhancing the system to ensure it meets the practical needs of healthcare professionals and organisations.
+All the measurements go to an online dashboard where the right people can act on them. Dietitians can see what each patient actually ate and adjust meal plans. Kitchen managers can see which dishes come back uneaten, refine menus and portion sizes, and track waste over time. This directly supports NHS England's national standard requiring organisations to monitor and reduce plate waste.
 
-Looking ahead, the potential for INFORM extends far beyond its current applications. The system could be adapted for use across a wide range of industries where food monitoring, waste reduction, and nutrition tracking are critical. Future developments may include integration with smart kitchen equipment such as connected ovens, advanced analytics that evolve through continuous data collection, and the creation of a mobile app for real-time access and convenience. With these innovations, INFORM aims to become a leading solution in data-driven food management and sustainability.
-</p>
+<div class="row">
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/INFORMFlow.png" title="INFORM in a hospital workflow" alt="Diagram of INFORM within the hospital food journey" %}
+    </div>
+</div>
+<div class="caption">
+Where INFORM fits into a hospital's food journey.
+</div>
+
+## Results
+
+INFORM was trained on FoodSeg103 and the INFORM dataset: 862 images of meals regularly served in NHS hospitals, with 3,040 labelled food items across 20 classes. It was then tested in more than 700 live tests in a working kitchen at Newcastle University, with freshly cooked food served by several different people.
+
+The results below separate dataset evaluation from live kitchen testing. See Sections 4.3–4.6 of the [accepted paper](https://eprints.ncl.ac.uk/309442) for the evaluation details.
+
+| Measure | Evaluation setting | Result |
+| --- | --- | --- |
+| Detection accuracy | INFORM test set | 87.4% |
+| Detection accuracy | 702 live kitchen tests | 84.9% |
+| Segmentation mIoU | INFORM dataset | 0.760 |
+| Segmentation mIoU | FoodSeg103 dataset | 0.412 |
+| Mean weight accuracy | Live tests, freshly served plates | 91.4% |
+| Mean weight accuracy | Live tests, partly eaten plates | 79.0% |
+| Mean temperature accuracy | Live tests, compared with probe measurements | 96.2% |
+
+mIoU measures the overlap between predicted and reference segmentation masks, averaged across classes. Values here use the 0–1 scale, where 1 means perfect overlap. The paper reports the same scores on a 0–100 scale.
+
+Weight accuracy is the paper's average percentage accuracy of estimated food weights against measured weights. Temperature accuracy compares the corrected thermal estimates with probe readings. These are measurement accuracy scores, not percentages of correctly classified food items.
+
+- **Detection:** 84.9% accuracy in live tests, rising to over 94% for the five most common foods. The hardest foods are visually similar dishes (such as lentil broth and vegetable soup) and layered dishes like lasagne.
+- **Weight:** 91.4% accurate on freshly served plates and 79% on partly eaten plates, where food is often mixed together.
+- **On-device:** on FoodSeg103, INFORM's segmentation (0.412 mIoU) is close to much larger models that can't run on a Raspberry Pi. It's the only method among those compared that also estimates weight, temperature and nutrition.
+
+<div class="row">
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/weights.png" title="Weight estimation accuracy" alt="Bar chart of weight estimation accuracy for five common NHS foods, served and returned" %}
+    </div>
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/NewcastleTestingSetup.jpg" title="Live testing setup" alt="INFORM prototype set up in a kitchen for testing" %}
+    </div>
+</div>
+<div class="caption">
+Left: weight accuracy on five common NHS foods, as served (blue) and returned (pink). Right: the live testing setup at Newcastle University.
+</div>
+
+## Built for real hardware
+
+Moving from a research prototype to a product meant dealing with problems research papers often skip: inconsistent lighting, a strict height limit so the unit fits on existing food trolleys, durability, calibration and patchy hospital Wi-Fi. Everything runs locally on a Raspberry Pi 5, using at most 2.1 GB of memory and 4–12 W of power.
+
+Speed matters when staff are processing a trolley of plates. Detection finishes **0.65 seconds** after the plate is put down, so it can be taken away straight away. Segmentation and weight estimation then run in the background in about 5 seconds. By comparison, even the smallest version of SAM 2.1 needs almost 22 seconds per plate on the same hardware.
+
+## Who benefits?
+
+INFORM is designed first for hospitals, where knowing what patients eat can directly improve outcomes. The same approach works anywhere food is served:
+
+- **Schools:** understanding what children actually eat to design healthier, more appealing menus.
+- **Restaurants and catering:** consistent portion control, quality monitoring and waste reduction.
+
+<div class="row">
+    <div>
+        {% include figure.liquid path="assets/img/INFORM/benefits.png" title="INFORM benefits" alt="Diagram of the benefits of INFORM data for different stakeholders" %}
+    </div>
+</div>
+
+## What's next
+
+The next step is putting INFORM into the hands of real users in hospitals and gathering their feedback. Expanding the dataset to capture how differently the same dish can be served will improve the hardest cases. Further ahead are integration with connected kitchen equipment and a mobile app for real-time access.

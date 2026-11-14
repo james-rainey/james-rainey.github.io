@@ -1,20 +1,22 @@
 ---
-layout: page
 title: DartsCV
+heading: "DartsCV"
+tagline: Automated darts scoring with computer vision and two Raspberry Pis.
 description: Automated Darts Scoring System
-main_title: <h1 align=center>DartsCV</h1><hr>
-main_description: <h2 align=center> Automated Darts Scoring with Computer Vision</h2><hr>
-img: assets/img/5.jpg
 importance: 3
 category: fun
+icon: fa-solid fa-bullseye
+tags: [OpenCV, Raspberry Pi, Python]
+links:
+  - name: GitHub
+    url: https://github.com/james-rainey/darts_cv
+    icon: fa-brands fa-github
+# TODO(human): Describe your contribution, dates and current status.
+# Empty fields stay hidden. My role also appears on featured cards.
+my_role: ""
+project_dates: ""
+project_status: ""
 ---
-
-<style>
-h2   {
-     color: #429435;
-     font-size:180%;
-     }
-</style>
 
 DartsCV is an experimental computer vision project that explores the automation of dart scoring using low-cost embedded hardware and OpenCV.
 The system employs two Raspberry Pi boards, each equipped with a camera, to track dart impacts on a standard dartboard. Through image processing and geometric calibration, the software estimates the impact position of each dart and calculates the score automatically.
@@ -22,9 +24,7 @@ The system employs two Raspberry Pi boards, each equipped with a camera, to trac
 The project demonstrates the feasibility of applying real-time vision algorithms to a casual gaming setup using minimal hardware.
 The project was initially completed in 2020 and disasembled in 2021, but has been reopen to rebuild it and make improvements using updated hardware and techniques.
 
-<br>
 ## System Design
----
 
 The current setup consists of:
 
@@ -38,9 +38,7 @@ The current setup consists of:
 
 One Raspberry Pi handles the main user interface, while the second assists with synchronized camera capture. Images from both cameras are used to triangulate the dart’s impact location on the board.
 
-<br>
 ## Features
----
 
 - Automated scoring for X01 (standard darts game)
 
@@ -50,10 +48,7 @@ One Raspberry Pi handles the main user interface, while the second assists with 
 
 - Remote UI via SSH with X11 forwarding
 
-<br>
-
 ## Tech Stack
----
 
 **Languages & Frameworks:** Python, OpenCV, Qt5
 
@@ -61,9 +56,7 @@ One Raspberry Pi handles the main user interface, while the second assists with 
 
 **Libraries:** NumPy, scikit-image, Paramiko
 
-<br>
 ## Current Challenges
----
 
 - Improving dart detection and segmentation
 
@@ -73,9 +66,7 @@ One Raspberry Pi handles the main user interface, while the second assists with 
 
 - Improved camera mounting using custom 3D printed mounts. 
 
-<br>
-##  Looking Ahead
----
+## Looking Ahead
 
 Future plans include:
 

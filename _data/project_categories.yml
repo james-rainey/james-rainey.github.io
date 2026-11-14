@@ -1,0 +1,5 @@
+# Display names for project categories. Only categories listed in
+# `display_categories` on _pages/projects.md are shown on the projects page.
+PostDoc: Postdoctoral research
+PhD: PhD research
+fun: Side projects

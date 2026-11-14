@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<header class="project-header">
+  <a class="back-link" href="{{ '/projects/' | relative_url }}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All projects</a>
+  {% if page.category %}<p class="eyebrow">{{ site.data.project_categories[page.category] | default: page.category }}</p>{% endif %}
+  <h1>{{ page.heading | default: page.title }}</h1>
+  {% if page.tagline %}<p class="page-lead">{{ page.tagline }}</p>{% endif %}
+  {% if page.tags %}
+    <ul class="chip-list">
+      {% for tag in page.tags %}<li class="chip">{{ tag }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+  {% if page.links %}
+    <div class="project-links">
+      {% for link in page.links %}
+        <a class="btn btn-ghost btn-sm" href="{{ link.url }}">{% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %} {{ link.name }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</header>
+
+{% assign my_role = page.my_role | default: '' %}
+{% assign project_dates = page.project_dates | default: '' %}
+{% assign project_status = page.project_status | default: '' %}
+{% if my_role != '' or project_dates != '' or project_status != '' %}
+  <section class="project-details prose" aria-label="Project details">
+    {% if page.my_role and page.my_role != '' %}<p><strong>My role:</strong> {{ page.my_role | escape }}</p>{% endif %}
+    {% if page.project_dates and page.project_dates != '' %}<p><strong>Dates:</strong> {{ page.project_dates | escape }}</p>{% endif %}
+    {% if page.project_status and page.project_status != '' %}<p><strong>Status:</strong> {{ page.project_status | escape }}</p>{% endif %}
+  </section>
+{% endif %}
+
+{% if page.cover %}
+  <div class="project-cover">
+    {% include figure.liquid loading="eager" path=page.cover alt=page.title sizes="(min-width: 1080px) 1040px, 95vw" %}
+  </div>
+{% endif %}
+
+<article class="prose">
+  {{ content }}
+</article>
+
+{% if page.related_publications %}
+  <section class="references">
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  </section>
+{% endif %}
