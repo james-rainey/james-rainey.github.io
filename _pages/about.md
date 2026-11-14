@@ -4,7 +4,7 @@ title: Trusted digital media and computer vision
 permalink: /
 eyebrow: Computer Vision Researcher
 subtitle: Postdoctoral Researcher at <a href='https://profiles.ncl.ac.uk/james.rainey/'>Newcastle University</a>
-pitch: Building technology for trusted digital media, turning the JPEG Trust international standard into tools people can use. I also develop AI systems that track harmful algal blooms from space and map retinal blood vessels to support treatment of diabetic eye disease.
+pitch: I build technology for trusted digital media, turning the JPEG Trust international standard into tools people can use. I also develop AI systems that track harmful algal blooms from space and map retinal blood vessels to support treatment of diabetic eye disease.
 
 profile:
   image: james.png
