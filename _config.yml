@@ -11,8 +11,8 @@ description: >
   standard, alongside AI for algal bloom monitoring and retinal imaging.
 keywords: trusted digital media, JPEG Trust, media provenance, computer vision, remote sensing, algal blooms, medical imaging, retinal imaging
 lang: en
-icon: jr-detection-green.svg # the favicon: an emoji, or an image name in /assets/img/
-logo: jr-detection-green.svg # the header logo, an image name in /assets/img/; leave blank to show initials
+icon: jr-detection-green_v3.svg # the favicon: an emoji, or an image name in /assets/img/
+logo: jr-detection-green_v3.svg # the header logo, an image name in /assets/img/; leave blank to show initials
 
 url: https://jamesrainey.co.uk # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
