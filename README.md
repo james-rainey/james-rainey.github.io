@@ -33,7 +33,7 @@ The homepage shows the project's image, description, contribution (when supplied
 | News item | add `_news/YYYY-MM-DD-short-name.md` with a `date:` and one or two sentences |
 | Paper | add a BibTeX entry to `_bibliography/papers.bib`. Optional fields: `abbr` (venue badge), `website`, `pdf`, `code`, `project`, `selected={true}` (show on home page) |
 | Project | add `_projects/name.md` with `title`, `tagline`, `img`, `category` (`PostDoc`, `PhD` or `fun`; anything else is hidden), `tags` and optional `links` |
-| CV | `assets/json/resume.json`; put a PDF in `assets/pdf/` and set `cv_pdf` in `_pages/cv.md` |
+| CV | `_data/resume.json` (read at build time, not published); put a PDF in `assets/pdf/` and set `cv_pdf` in `_pages/cv.md` |
 | Social links | `_data/socials.yml` |
 
 ## Design
