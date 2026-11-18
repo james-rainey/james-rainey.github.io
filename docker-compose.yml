@@ -2,7 +2,7 @@
 # Gems are cached in a named volume, so only the first start is slow.
 services:
   jekyll:
-    image: ruby:3.3.5
+    image: ruby:3.3
     working_dir: /srv
     command: >
       bash -c "command -v node >/dev/null || (apt-get update -qq && apt-get install -y -qq imagemagick nodejs >/dev/null);

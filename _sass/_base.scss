@@ -223,6 +223,11 @@ pre {
   white-space: nowrap;
 }
 
+// Full container width, to line up with the card grids on the home page.
+.prose--full {
+  max-width: none;
+}
+
 .prose .row.figure-narrow {
   max-width: 640px;
   margin-inline: auto;
