@@ -678,3 +678,91 @@ a.area:hover {
     font-size: var(--text-xl);
   }
 }
+
+// Contact form
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 560px;
+
+  label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: var(--space-3);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--surface-raised);
+    color: var(--text);
+    font: inherit;
+
+    &:focus {
+      border-color: var(--accent);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .btn {
+    align-self: flex-start;
+  }
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+// Formspree AJAX messages. The library sets data-fs-active to show them;
+// its own default styles are switched off so these theme colours apply.
+.contact {
+  max-width: 560px;
+}
+
+[data-fs-success],
+[data-fs-error] {
+  display: none;
+
+  &[data-fs-active] {
+    display: block;
+  }
+}
+
+.form-message {
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-5);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.form-message--success {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.form-message--error {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--text);
+}
+
+.field-error {
+  margin-top: calc(-1 * var(--space-2));
+  margin-bottom: var(--space-3);
+  color: var(--danger);
+  font-size: var(--text-xs);
+}
+
+.contact-form [aria-invalid="true"] {
+  border-color: var(--danger);
+}

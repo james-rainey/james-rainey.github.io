@@ -46,6 +46,8 @@
   --accent-hover: #166534;
   --accent-soft: #dcfce7;
   --accent-contrast: #ffffff;
+  --danger: #b91c1c; // 6.5:1 on white
+  --danger-soft: #fee2e2;
   --header-bg: rgba(255, 255, 255, 0.78);
   --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.06);
   --shadow-hover: 0 2px 4px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(15, 23, 42, 0.1);
@@ -66,6 +68,8 @@
   --accent-hover: #86efac;
   --accent-soft: rgba(74, 222, 128, 0.14);
   --accent-contrast: #052e16;
+  --danger: #f87171; // 7:1 on the dark background
+  --danger-soft: rgba(248, 113, 113, 0.14);
   --header-bg: rgba(11, 15, 20, 0.75);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
   --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.4);

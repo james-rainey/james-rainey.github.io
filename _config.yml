@@ -17,6 +17,11 @@ logo: jr-detection-green.svg # the header logo, an image name in /assets/img/; l
 url: https://jamesrainey.co.uk # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 
+# Contact form (_pages/contact.md). Create a form at https://formspree.io,
+# set it to deliver to your personal email, and paste its endpoint here.
+# Leave blank to hide the form.
+contact_form_endpoint: https://formspree.io/f/xzergzrr
+
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
@@ -194,6 +199,12 @@ third_party_libraries:
       fonts: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/output/chtml/fonts/woff-v2/"
       js: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
     version: "3.2.2"
+  formspree_ajax:
+    integrity:
+      js: "sha256-NRTy7NVDMldoedsXAVvUPE7ADGMiUzbsbAc/ftHinGc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/@formspree/ajax@1.1.5/dist/global.js"
+    version: "1.1.5"
   medium_zoom:
     integrity:
       js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
